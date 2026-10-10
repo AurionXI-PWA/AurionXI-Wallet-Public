@@ -70,6 +70,22 @@ Public source history starts with this export. No private repository history,
 local device evidence, APKs, audit correspondence, customer/registry records or
 website source has been imported.
 
+## Security assessment and private validation
+
+The deployed AurionXI TokenDiamond received a **90.61/100** score in a
+SolidityScan static assessment, with **0 Critical, 0 High and 0 Medium** findings
+reported. Read the complete
+[ARXI Token Audit Report](https://www.aurionxi.com/ARXI_Token_Audit_Report.pdf)
+for its scope, methodology, remaining findings and disclaimers. This assessment
+does not certify the wallet application or guarantee that the protocol is free
+from vulnerabilities.
+
+Additional Mainnet operational validation and configuration scripts are kept
+private because they contain production-administration workflows. A sanitized
+technical walkthrough or selected evidence may be shared during a verified
+technical interview or under NDA. The executable wallet and backend tests that
+are included in this public source can be run using the commands above.
+
 ## Security and licensing
 
 See [SECURITY.md](SECURITY.md) for reporting guidance and [LICENSE.md](LICENSE.md)
