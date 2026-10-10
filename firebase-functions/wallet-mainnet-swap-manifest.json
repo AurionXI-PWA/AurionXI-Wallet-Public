@@ -1,0 +1,170 @@
+{
+  "chainId": 56,
+  "checkedBlock": 125975973,
+  "identity": "0x70ef3aa996f0258d64b4982b04eb6c93d6f8d6da00bf0dab0eb4a49967d71933",
+  "contracts": [
+    {
+      "address": "0x0ba6db72637ec9b3a35279e74acaa08abc579b67",
+      "runtimeHash": "0x8267c9c37611a69a1f4c079e47a77e7489b0142a0f59a9083ce3bf13a3697ec9"
+    },
+    {
+      "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+      "runtimeHash": "0x69aef35de7236f9ae83edadff736f01ea40edd8919b2e73d87dea5d3255b8c3e"
+    },
+    {
+      "address": "0x132b55cdd1e58b04c23618d4f6b595bbde07967b",
+      "runtimeHash": "0xbebc80813848cec3bbf16448e2385ddf66a0d1b9bcf98ab457314690741f5a7c"
+    },
+    {
+      "address": "0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae",
+      "runtimeHash": "0x60e4bcb14447615ab7c14fda2c2d70ca4191570e8841c75618e627c8f72662f8"
+    },
+    {
+      "address": "0x3ee72fab3582e7e99dc957eadee71ee1bb63d84f",
+      "runtimeHash": "0xa793f0408f39713599c0610f71ab9a94a06a10408d9ca3f9274f96559efc230a"
+    },
+    {
+      "address": "0x505f5835928fec997b3fcdcaedfc6054557c47b1",
+      "runtimeHash": "0x8af545e3fb1fdd68ead83fffb1734bd6939459836e9f7f82300d3a0f1237125f"
+    },
+    {
+      "address": "0x55d398326f99059ff775485246999027b3197955",
+      "runtimeHash": "0x97a48aa4c129657440dafdacd4c836389734d28cc4a0ca7403e68da660a74a59"
+    },
+    {
+      "address": "0x56d290f1d34a997369421199597857d2273b88ca",
+      "runtimeHash": "0x749870a79a55ee6500d1a219d8293cc82e3240b31ccb9228b49f499b9eb09f86"
+    },
+    {
+      "address": "0x58896e15936d13285495c06baae54dda218d0a67",
+      "runtimeHash": "0x81869d2114e70ee22eaec33a1b14d399563f0e5a81a3722bc021d73f0983decd"
+    },
+    {
+      "address": "0x5b9c2a406d13595c829a81aa8e5869f1ce3a102d",
+      "runtimeHash": "0xfb7062ec55c4fa595743d888819ce34c3a98f59a10a30ac709fedc59edda8485"
+    },
+    {
+      "address": "0x6ffec4860325f8bfb3f000354708a7d0cae4b250",
+      "runtimeHash": "0x703b6db82a0353d0bcfa6745ee1a978dd1c8ac332268a22ba25ed122f5759b42"
+    },
+    {
+      "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "runtimeHash": "0xb7d84205eaaf83ce7b3940c6beaad6d22790255e34a9a2b486aa8cdfff118fe6"
+    },
+    {
+      "address": "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
+      "runtimeHash": "0x9e8d17faaee69b053be6ac65b2b2c317741d770cb5fbdd9512536d17e9e076ca"
+    },
+    {
+      "address": "0xdf5ad8a9129f5c11655fa2576a3ec6d96d2b836a",
+      "runtimeHash": "0x60e4bcb14447615ab7c14fda2c2d70ca4191570e8841c75618e627c8f72662f8"
+    },
+    {
+      "address": "0xe07f9cc6616c775cb4ae5087ca7159f01e520c94",
+      "runtimeHash": "0x025af0504eace96182ebbfbb7d52ccaa88602ccfcf8933e4fabb39dd6a12faed"
+    }
+  ],
+  "selectors": [
+    {
+      "signature": "transfer(address,uint256)",
+      "selector": "0xa9059cbb",
+      "facet": "0x3ee72fab3582e7e99dc957eadee71ee1bb63d84f"
+    },
+    {
+      "signature": "transferFrom(address,address,uint256)",
+      "selector": "0x23b872dd",
+      "facet": "0x3ee72fab3582e7e99dc957eadee71ee1bb63d84f"
+    },
+    {
+      "signature": "approve(address,uint256)",
+      "selector": "0x095ea7b3",
+      "facet": "0x3ee72fab3582e7e99dc957eadee71ee1bb63d84f"
+    },
+    {
+      "signature": "balanceOf(address)",
+      "selector": "0x70a08231",
+      "facet": "0x3ee72fab3582e7e99dc957eadee71ee1bb63d84f"
+    },
+    {
+      "signature": "allowance(address,address)",
+      "selector": "0xdd62ed3e",
+      "facet": "0x3ee72fab3582e7e99dc957eadee71ee1bb63d84f"
+    },
+    {
+      "signature": "calculateTaxes(address,address,uint256,bool,bool)",
+      "selector": "0xd3d202a6",
+      "facet": "0xe07f9cc6616c775cb4ae5087ca7159f01e520c94"
+    },
+    {
+      "signature": "validateTrade(address,address,uint256)",
+      "selector": "0xaf9ab0d6",
+      "facet": "0x505f5835928fec997b3fcdcaedfc6054557c47b1"
+    },
+    {
+      "signature": "monitorTrade(address)",
+      "selector": "0x5f1c53bd",
+      "facet": "0x132b55cdd1e58b04c23618d4f6b595bbde07967b"
+    },
+    {
+      "signature": "getTaxConfig()",
+      "selector": "0x7c922d88",
+      "facet": "0x58896e15936d13285495c06baae54dda218d0a67"
+    },
+    {
+      "signature": "getMicroSellConfiguration()",
+      "selector": "0xea02b21b",
+      "facet": "0x58896e15936d13285495c06baae54dda218d0a67"
+    },
+    {
+      "signature": "getPanicSellConfig()",
+      "selector": "0xadcd33bb",
+      "facet": "0x58896e15936d13285495c06baae54dda218d0a67"
+    },
+    {
+      "signature": "getWalletFlags(address)",
+      "selector": "0x7fb9be03",
+      "facet": "0x5b9c2a406d13595c829a81aa8e5869f1ce3a102d"
+    },
+    {
+      "signature": "getPairAddress()",
+      "selector": "0x8d5f81e2",
+      "facet": "0x0ba6db72637ec9b3a35279e74acaa08abc579b67"
+    },
+    {
+      "signature": "isLPPair(address)",
+      "selector": "0x91b29695",
+      "facet": "0x0ba6db72637ec9b3a35279e74acaa08abc579b67"
+    },
+    {
+      "signature": "canBuy(address,uint256)",
+      "selector": "0x1346c20e",
+      "facet": "0x58896e15936d13285495c06baae54dda218d0a67"
+    },
+    {
+      "signature": "canSell(address,uint256)",
+      "selector": "0xc76659a1",
+      "facet": "0x58896e15936d13285495c06baae54dda218d0a67"
+    },
+    {
+      "signature": "totalSupply()",
+      "selector": "0x18160ddd",
+      "facet": "0x3ee72fab3582e7e99dc957eadee71ee1bb63d84f"
+    },
+    {
+      "signature": "feeCollector()",
+      "selector": "0xc415b95c",
+      "facet": "0x3ee72fab3582e7e99dc957eadee71ee1bb63d84f"
+    },
+    {
+      "signature": "facetAddress(bytes4)",
+      "selector": "0xcdffacc6",
+      "facet": "0x56d290f1d34a997369421199597857d2273b88ca"
+    },
+    {
+      "signature": "liquidityLocker()",
+      "selector": "0x9759164a",
+      "facet": "0x3ee72fab3582e7e99dc957eadee71ee1bb63d84f"
+    }
+  ],
+  "scope": "Captured public execution manifest; full consolidated acceptance remains the next step."
+}

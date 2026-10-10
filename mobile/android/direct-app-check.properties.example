@@ -1,0 +1,3 @@
+# Copy to direct-app-check.properties for your own registered Android app.
+# The site key is a public identifier, not a service-account credential.
+recaptchaEnterpriseSiteKey=YOUR_PACKAGE_RESTRICTED_SITE_KEY

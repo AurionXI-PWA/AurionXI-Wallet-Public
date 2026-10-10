@@ -1,0 +1,29 @@
+# OSX
+#
+.DS_Store
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+
+# generated inline modules
+app/src/main/java/inline/
+
+# Bundle artifacts
+*.jsbundle
+
+# Local production signing credentials — never commit this file.
+keystore.properties
+direct-keystore.properties
+# Local identifier for the website APK's reCAPTCHA Enterprise App Check
+# provider. It is intentionally separate from signing credentials.
+direct-app-check.properties
+# Local, time-limited Mainnet proof scope. Public transaction constraints are
+# kept out of ordinary builds and must be regenerated for every approved proof.
+controlled-proof.properties

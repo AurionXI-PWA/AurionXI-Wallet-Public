@@ -1,0 +1,6 @@
+{
+  "platforms": ["android"],
+  "android": {
+    "modules": ["com.aurionxi.wallet.argon2.AurionXiArgon2Module"]
+  }
+}

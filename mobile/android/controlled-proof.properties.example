@@ -1,0 +1,9 @@
+# Copy to android/controlled-proof.properties only after a fresh, explicit
+# owner approval. The real file is ignored and must be deleted after the proof.
+enabled=false
+senderAddress=0x0000000000000000000000000000000000000000
+recipientAddress=0x0000000000000000000000000000000000000000
+asset=arxi
+amountWei=0
+maxFeeWei=0
+expiresAtEpochMs=0

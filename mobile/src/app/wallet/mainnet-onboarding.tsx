@@ -1,0 +1,33 @@
+import { useRouter } from 'expo-router';
+import { useEffect, useState } from 'react';
+import { ActivityIndicator, Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+import { getMainnetOnboardingEntry } from '@/security/mainnet-onboarding-machine';
+import { useMainnetOnboarding } from '@/security/mainnet-onboarding-provider';
+import { getMainnetVaultV3Status, type VaultStatus } from '@/security/vault-store';
+
+export default function MainnetOnboardingScreen() {
+  const router = useRouter();
+  const { state, dispatch } = useMainnetOnboarding();
+  const [vaultStatus, setVaultStatus] = useState<VaultStatus | 'loading'>('loading');
+  useEffect(() => { let active = true; void getMainnetVaultV3Status().then((status) => active && setVaultStatus(status)).catch(() => active && setVaultStatus('unsupported')); return () => { active = false; }; }, []);
+  const entry = vaultStatus === 'present' ? getMainnetOnboardingEntry(true) : getMainnetOnboardingEntry(false);
+  const begin = (flow: 'create' | 'import') => { dispatch({ type: flow === 'create' ? 'BEGIN_CREATE' : 'BEGIN_IMPORT' }); router.push('/wallet/mainnet-responsibility' as never); };
+  return <SafeAreaView style={styles.safeArea}><ScrollView contentContainerStyle={styles.content}>
+    <Text accessibilityRole="header" style={styles.headerTitle}>Wallet setup</Text>
+    <Image accessibilityLabel="AurionXI logo" source={require('../../assets/wallet-logo.webp')} style={styles.logo} />
+    <Text style={styles.title}>Welcome to AurionXI</Text>
+    <Text style={styles.body}>Set up a wallet you control. Your recovery phrase and PIN stay on this device and are never shared with AurionXI.</Text>
+    {vaultStatus === 'loading' ? <View style={styles.loading}><ActivityIndicator accessibilityLabel="Checking wallet status" color="#67b5ff" /><Text style={styles.loadingText}>Checking wallet</Text></View> : null}
+    {vaultStatus === 'unsupported' || vaultStatus === 'corrupt' ? <View style={styles.errorCard}><Text accessibilityRole="alert" style={styles.error}>Secure storage is unavailable. No wallet setup action was performed.</Text></View> : null}
+    {vaultStatus === 'present' ? <View style={styles.card}><Text style={styles.cardTitle}>Wallet already set up</Text><Text style={styles.cardBody}>This wallet is protected. Unlock it to continue, or manage biometric access in Settings.</Text><Pressable accessibilityRole="button" onPress={() => router.push('/wallet/mainnet-unlock' as never)} style={styles.primary}><Text style={styles.primaryText}>Unlock wallet</Text></Pressable><Pressable accessibilityRole="button" onPress={() => router.push('/wallet/mainnet-biometric' as never)} style={styles.secondary}><Text style={styles.secondaryText}>Manage biometric unlock</Text></Pressable></View> : null}
+    {vaultStatus === 'empty' && state.stage === 'choice' ? <View style={styles.choices}><Pressable accessibilityRole="button" onPress={() => begin('create')} style={styles.choice}><Text style={styles.choiceTitle}>Create a new wallet</Text><Text style={styles.choiceBody}>Get a new 24-word recovery phrase and create a PIN.</Text><Text style={styles.choiceArrow}>›</Text></Pressable><Pressable accessibilityRole="button" onPress={() => begin('import')} style={styles.choice}><Text style={styles.choiceTitle}>Import an existing wallet</Text><Text style={styles.choiceBody}>Restore a wallet using your own 24-word recovery phrase.</Text><Text style={styles.choiceArrow}>›</Text></Pressable></View> : null}
+    {vaultStatus === 'empty' && state.stage === 'responsibility' ? <View style={styles.card}><Text style={styles.cardTitle}>{state.flow === 'create' ? 'Create your wallet' : 'Import your wallet'}</Text><Text style={styles.cardBody}>Continue when you are somewhere private and ready to protect your recovery phrase.</Text><Pressable accessibilityRole="button" onPress={() => router.push('/wallet/mainnet-responsibility' as never)} style={styles.primary}><Text style={styles.primaryText}>Continue</Text></Pressable></View> : null}
+    {entry.state === 'existing-vault' ? null : <View style={styles.safety}><Text style={styles.safetyTitle}>Your wallet, your control</Text><Text style={styles.safetyBody}>Never share your recovery phrase, private key, or PIN with anyone — including support.</Text></View>}
+  </ScrollView></SafeAreaView>;
+}
+
+const styles = StyleSheet.create({
+  safeArea: { flex: 1, backgroundColor: '#04091b' }, content: { padding: 24, paddingBottom: 48 }, headerTitle: { color: '#f8fbff', fontSize: 22, fontWeight: '900', textAlign: 'center' }, logo: { alignSelf: 'center', height: 72, marginTop: 42, resizeMode: 'contain', width: 72 }, title: { color: '#f8fbff', fontSize: 30, fontWeight: '900', marginTop: 22, textAlign: 'center' }, body: { color: '#afc1df', fontSize: 15, lineHeight: 23, marginTop: 12, textAlign: 'center' }, loading: { alignItems: 'center', flexDirection: 'row', justifyContent: 'center', marginTop: 28 }, loadingText: { color: '#afc1df', fontSize: 13, marginLeft: 10 }, choices: { marginTop: 30 }, choice: { backgroundColor: '#0b1b3b', borderColor: '#326fce', borderRadius: 18, borderWidth: 1, marginBottom: 14, padding: 18, paddingRight: 48 }, choiceTitle: { color: '#f8fbff', fontSize: 17, fontWeight: '900' }, choiceBody: { color: '#a9bfdf', fontSize: 13, lineHeight: 20, marginTop: 7 }, choiceArrow: { color: '#71b6ff', fontSize: 34, fontWeight: '300', position: 'absolute', right: 18, top: 31 }, card: { backgroundColor: '#0b1b3b', borderColor: '#326fce', borderRadius: 18, borderWidth: 1, marginTop: 30, padding: 18 }, cardTitle: { color: '#f8fbff', fontSize: 18, fontWeight: '900' }, cardBody: { color: '#a9bfdf', fontSize: 14, lineHeight: 21, marginTop: 8 }, primary: { alignItems: 'center', backgroundColor: '#3b82f6', borderRadius: 13, justifyContent: 'center', marginTop: 20, minHeight: 52 }, primaryText: { color: '#f8fbff', fontSize: 15, fontWeight: '900' }, secondary: { alignItems: 'center', borderColor: '#609cf4', borderRadius: 13, borderWidth: 1, justifyContent: 'center', marginTop: 12, minHeight: 52 }, secondaryText: { color: '#cfe5ff', fontSize: 15, fontWeight: '800' }, safety: { backgroundColor: '#0b2022', borderColor: '#245d63', borderRadius: 16, borderWidth: 1, marginTop: 24, padding: 16 }, safetyTitle: { color: '#84e4df', fontSize: 15, fontWeight: '900' }, safetyBody: { color: '#b9d8d4', fontSize: 13, lineHeight: 20, marginTop: 7 }, errorCard: { backgroundColor: '#281819', borderColor: '#804447', borderRadius: 16, borderWidth: 1, marginTop: 24, padding: 16 }, error: { color: '#ffc2bc', fontSize: 14, lineHeight: 21 },
+});

@@ -1,0 +1,22 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'com.aurionxi.wallet.argon2'
+version = '0.1.0'
+
+android {
+  namespace "com.aurionxi.wallet.argon2"
+  defaultConfig {
+    versionCode 1
+    versionName "0.1.0"
+  }
+  lintOptions {
+    abortOnError false
+  }
+}
+
+dependencies {
+  implementation 'com.lambdapioneer.argon2kt:argon2kt:1.6.0'
+}

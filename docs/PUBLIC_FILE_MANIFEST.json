@@ -1,0 +1,4179 @@
+{
+  "formatVersion": 1,
+  "exportDate": "2026-10-10",
+  "sourceCommit": "6e4c2f69685a3c9775ac35bfafc51b62fa10110d",
+  "privateHistoryIncluded": false,
+  "hashAlgorithm": "SHA-256",
+  "hashScope": "Exact exported bytes; this manifest excludes itself.",
+  "fileCount": 832,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "43743c1f1b1d6ae1024d1cdb1b0fe872cac4b5d2781df9f5e074dab9332a925f",
+      "status": "public-adaptation",
+      "sourceSha256": "cd0882d4c95c82f74ce1c22fffa28eda5e48dcf95005d9a36c7265548f7c3d21"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "55ccd40e8fb2c6310b4a2fbc496afbe892bc8dd9a343fc5a27385055602520a6",
+      "status": "public-adaptation",
+      "sourceSha256": "83fb188f9c4e70a4d4a79d4507e8656e8f5931b57041fdde5d52ddfd2622be7a"
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "68a0e1f80c2488fb834620bbfec32113e16100520f0fa358dfd25b2296d94183",
+      "status": "new-public-file"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8a776df555fa863db925fb960adc6dba265c81262b6ac0ac7ba92b9bc181d8cf",
+      "status": "public-adaptation",
+      "sourceSha256": "217ea512879691c605701b9ff1998b21f27f4ce702a2bad1473e8225f93200d5"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "4d6146c00f094639d17e7726d6431dd20518682bdd03c9a17fbc8b86093ce4aa",
+      "status": "new-public-file"
+    },
+    {
+      "path": "docs/PUBLIC_EXPORT.md",
+      "sha256": "dfed6ae1fb05cb73b574eb6ca7c4d1bc059075de9e18db8fa2edff0603955cfb",
+      "status": "new-public-file"
+    },
+    {
+      "path": "docs/PUBLIC_VERIFICATION.md",
+      "sha256": "3b760ae6354838452abe35f18e93f820ff9a2979036f6ba9f179d28f52d76426",
+      "status": "new-public-file"
+    },
+    {
+      "path": "firebase-functions/.gitignore",
+      "sha256": "52137940137ff8f484063dc3d56bf508cc854b9b718f33deb364baf5b1cfb9c6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/index.js",
+      "sha256": "8d243c1e6ea229f51b0e1e7132fd457d728d6eb076ffc91ca372ce709014fd7e",
+      "status": "public-adaptation",
+      "sourceSha256": "54b4416efed12d8b8dbc326270ebec37ff9ae5c614a58f9a2e772b065f11d20a"
+    },
+    {
+      "path": "firebase-functions/package-lock.json",
+      "sha256": "2722718d796224b8680108154ceee7e52517479ec79f1fafb4e0c6f8a2b2b6fb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/package.json",
+      "sha256": "f26e377708cf37d3205b12313d88681fe9fbc5a88ee1338ae8fd9982efaa23f4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-address-registry.js",
+      "sha256": "d3a89d39fa2285ea4d9511eae466a51d8e2be60f6ab42cc9a819f7482111aa72",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-address-registry.test.js",
+      "sha256": "b77d7dcc6f0032d944cf0909018bfadc902f54054aebe5ff38dc8bde51db99e6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-history.js",
+      "sha256": "73e32239e238148f36a93eacc5893a69b3e697fb286cfa6112c229932dd65df6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-broadcast-source-guard.test.js",
+      "sha256": "8ae9f60ca30e9ec9c8caba626cf9062738676e28d354b5c7ce0b2b7e79f27aeb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-broadcast.js",
+      "sha256": "461ea9f18f3c888ec4f02e76eebbca4a27ddd94db50b063e053dff1f78b92406",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-broadcast.test.js",
+      "sha256": "e0a433ecd5712beadc50174af7cc72638489b99c8a484b64800828d05179492d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-history.js",
+      "sha256": "91b2ca55f96446f531286ed9683520aa04a2f4951ec357ee7744ff2fdc374693",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-history.test.js",
+      "sha256": "166847dc550266b24c637a9c46f53eca1e560e93552dfa7124a38edce491d975",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-presign.js",
+      "sha256": "a9eb9778b4badf83052394e9925b2659bcee545120ea19fa2b33233f12ba329f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-presign.test.js",
+      "sha256": "d4aaff5a9bff2a246c86563f96132b8e66cad5a120a9bf9f36bae5f0a69a5cf3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-production-policy.js",
+      "sha256": "57267eba2d6799214833eb0b6b89daea1a5c9aa741e9647500613e4dfb6d04e3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-production-policy.test.js",
+      "sha256": "1b698a916e50ddf66d046d40551d9275a93f4369ddcf14e1a9948346ff5a2359",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-readonly.js",
+      "sha256": "1fb47a52e4d1c01768d839cd925968902e31a7b3f1e2f172f70bcc1a7118e4b9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-readonly.test.js",
+      "sha256": "4f593b21875b05235aefbfdb837d38bb21eae4102b31065e08671cd5b4bc5730",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-relay-policy.js",
+      "sha256": "bfcea5c57bf615e681c066532fb79f96d2208e5eb6adba796e6699cbf55b223a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-relay-policy.test.js",
+      "sha256": "db1f9876f734c0d6e3e67595f054f348efa2b5b1edb766b864a60a273f58af11",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-replacement.test.js",
+      "sha256": "3cece2ac165b04710279f549590687c9db07f916d9d6db0dc1300e3a6227f04d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-swap-manifest.json",
+      "sha256": "dd943819f170284b77aa3269e36edc4159f21566cd83e9f5d60fde1dcb219631",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-swap-policy.js",
+      "sha256": "6e8dc453ad366bc81c1ce2d5851773d60a05e087224fcfd7314abc268afe6883",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-swap-policy.test.js",
+      "sha256": "d2af73b88e17b59620e3b34063f202ce44c125328762388736de1e3dff4b07c8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-swap-quote.js",
+      "sha256": "c9fec83966ec19efddd5cfa654c1418a50460201370a1eb3c872812c2ce27799",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-swap-receipt.js",
+      "sha256": "f690e20b388539b882088ab8b9fc9b8e9298fcfc1f3e2215962a6ce9d4b4cb93",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-mainnet-swap-receipt.test.js",
+      "sha256": "2642fd1b6a65324eae4421acd82985732b9230e35d923bcd7ce0402028937f6b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-testnet-broadcast.js",
+      "sha256": "be98169a98016d4a6b982b551f8b2e8eb520d44950c13589ea9e0bc7f1e260ae",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "firebase-functions/wallet-testnet-broadcast.test.js",
+      "sha256": "6d0ca3a76e20b1752c469070e7d806f03b743585619b55aa95e6d57e51d1484d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/.gitignore",
+      "sha256": "248e27fbc5b497e61706601e07ef50644ddf7485eaa42546a28a0ce2ff0e2346",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/LICENSE",
+      "sha256": "fb3ca4a837f5779e83cef89b78253a8949cfb9429c340309f62d0465ec6610b4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/README.md",
+      "sha256": "3b2a855e4c2f2bb008204d647db7508837d37e83842980f43e4e1a968e9adf0c",
+      "status": "public-adaptation",
+      "sourceSha256": "5d73044f75517fa2fd384ccb04c9c02d380d53a43af55d63a0f003cfbd4a36f5"
+    },
+    {
+      "path": "mobile/android/.gitignore",
+      "sha256": "f17afbb61b7d4896ed68dea9fa8d1019820e5ef788022fb0e96cb07700e5ad5e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/build.gradle",
+      "sha256": "d6396cc670bbe84564433958f9ffe8abec109c8f36d6f118cff41365b8926804",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/proguard-rules.pro",
+      "sha256": "8bd4d7b69a1d78e8322b459b5e8d48234adce7481df04da34c0140d52ffb367a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/debug/AndroidManifest.xml",
+      "sha256": "fb1795032c764d975376e1612ab7022058eca2268a45efbe731a47a5d3ac0f60",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/debugOptimized/AndroidManifest.xml",
+      "sha256": "fb1795032c764d975376e1612ab7022058eca2268a45efbe731a47a5d3ac0f60",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/AndroidManifest.xml",
+      "sha256": "62f41963582804d0eb7e40cb80afed27901905f2bc131135b65edbaf36a56e19",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/MainActivity.kt",
+      "sha256": "ab47a7753f460b6de3e7c2f3929dae4fad37b12b354fe6bdfdb1db14ad174af6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/MainApplication.kt",
+      "sha256": "7e8b5d00a666f82c7e7eea4dd6fb0e416894c618640e7c60aa0067446f6bc194",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/appcheck/AurionXIRecaptchaAppCheckModule.kt",
+      "sha256": "f428228ca135e871406b3e0c9f4a3cd150eb44eeffee6336de2ff32ce66f37eb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/appcheck/AurionXIRecaptchaAppCheckPackage.kt",
+      "sha256": "4e8b8a917ceced3e15d8c49abb97730af729156f57972b01fa7f48bf3eafef2a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/AurionXIMainnetSecurityModule.kt",
+      "sha256": "ca710f7f5e8dd023292b2e69bb930c20c39325880076fe0a9ab19f6c9d82d68f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/AurionXIMainnetSecurityPackage.kt",
+      "sha256": "6997c30b43fc312d2654d5f8953b3f08a42e45987fd842d3f01930ed6c6e9a04",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetEncryptedNonceJournal.kt",
+      "sha256": "e8d28a75d217b7d2d143ff4189b1901a79fb7e3bf4e692e44bd04ca98e74ccd6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetFixedPreSignSnapshotClient.kt",
+      "sha256": "707b78cd76994a390aa72f0e8e3372ecc7626a24430bbfa61774b77016c10f4a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeAuthorizationRegistry.kt",
+      "sha256": "4553fd1c358e871956c5963ee3a5eabe99828b9b1155a2f2bb48aed6cc2ffd62",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeBroadcastController.kt",
+      "sha256": "7f5fb378fc3ad52196af7b2074bfd6a7acca8454d5cfdd7747c483c34be6d539",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeDirectProductionPolicy.kt",
+      "sha256": "9506836cfd8bb2f189a0a9107451fda89283aa428d2c3a40fd0cdc6a78b1cb1e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeFinalKeyUseBoundary.kt",
+      "sha256": "007f4e926dda2c97ead1c4cd38c2b61277be0a106a08866dd0d0fdec7e9eefbf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeHandleIssuer.kt",
+      "sha256": "29e61bcd06d3c32684bda4a5e77c3a2292d6ca9d2111e634559edb786579882a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeIntentSemanticVerifier.kt",
+      "sha256": "674b84cc044db835d2afa7fc2b71d919e29dce5b32804349cba5e996a52a913c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeLegacyTransactionVerifier.kt",
+      "sha256": "457b9b94a7c7b7828abb6c286ae742227eb0557c2e98b41c518091b671c0b74c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeLifecycleGuard.kt",
+      "sha256": "a1e8a7abdebeaa676593f9f203b9c8500082e5d34d6da251913a678eb0e4342f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeMigrationController.kt",
+      "sha256": "69fffb5b1db22fe349854d78c95f5d0d8d8b83b40965c5fcb8e0a4f96716e4a0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeNonSubmissionPolicy.kt",
+      "sha256": "ee9425a400eea220553517abdc5447b4bdddbe49c4fd57a24cdfd52410b946f2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeNonceRecoveryPolicy.kt",
+      "sha256": "bb2ff9f13974e8a3525d9072ed67fb37fce68690518418eb0b5d86fa04a74cb6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativePreSignGate.kt",
+      "sha256": "e4e2aaf3512e974186374dc811ea8ba1ac98b587921c2119b0cbd019edc5a8ea",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativePreSignRevalidator.kt",
+      "sha256": "3dac77db4d7b44bd5f40b73289d9b324258c7277268b0990db54aa44dddaad45",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeReceiptRecoveryPolicy.kt",
+      "sha256": "4f6cdd3b9c904b1f32d043e3cd7c1fcd4e5ca4efc63091e338731eb3fa1e91c0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeRecoveryDiagnostics.kt",
+      "sha256": "3c18d9498a36954362b3c7134a8e67208081907154ffc1ab391b3f2051e0fe89",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeReplacementPolicy.kt",
+      "sha256": "ad86b825d26423d38cdc38a092c48762cf8a55d7ec230128a1dd7997568fd00f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeReplacementRecovery.kt",
+      "sha256": "82f7474ff92f0745b56eccb6b979f5faa1ea7aeda9c8f219a9673c8401b7bb03",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeReplacementReviewBuilder.kt",
+      "sha256": "44bc29e5dc951ead7c457571aa9f94181948bbf6f2d4384db1f4ea656a9eec7f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeSignedPayloadStore.kt",
+      "sha256": "045deb9f769ab0e850cbd0fd9eaddae78f792462c43a200ed4249edd4eb9c0ec",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeSigningBoundaryGuard.kt",
+      "sha256": "93c94d0bbdb74fd2598928b5e28d29b46f5b5c9227a89d4bbf20b4ef8889a61e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeSigningController.kt",
+      "sha256": "00064bfc0692fc7a1749f7b634e7cbe744a70a635f2f7bc0fe025164676557c8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeSigningCoordinator.kt",
+      "sha256": "e641737a888783d92350a4c438c50b051dd276e34a9e57f1a3dab5194964c017",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeSigningReleaseGate.kt",
+      "sha256": "36fff2d57921159aeed9a24d9a5a20ea790f38aebca58a8e94433a05ef39432d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeSupportDiagnostics.kt",
+      "sha256": "30c4f662f1b21e43c955fdacdf3ec77a65337242e2377031a4c8ecc9f7da3f19",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeSwapPolicy.kt",
+      "sha256": "06db3011dfa895e0b7a9053681fb139926505e545beb08f479df60ece9068cf3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeSwapSnapshotClient.kt",
+      "sha256": "52272957ccdb72957d28e7169fd9927eb59a65e7f7b985ed8196151788f9532a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeTransactionSigner.kt",
+      "sha256": "e11260180bc0cf20d3bfb6b1f09becefa3572f97f53857cba6c7360b4c46e87e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeTransferOperationGate.kt",
+      "sha256": "8fc2e248d7c117f5a1f437433fa3d94ba32abf2e1c204919f5d3ff7089690194",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeVaultMigration.kt",
+      "sha256": "fe6431ccd9a1abe8db8d49648cd0ec650f6ddf3c3470f6ddbfeed044a497ea03",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetNativeVaultVerificationController.kt",
+      "sha256": "3ba3ccfef31537914d485f2b72630225def129c25524e1cf172dbb09d1ad7a57",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/java/com/aurionxi/wallet/mainnet/MainnetSupportEventPolicy.kt",
+      "sha256": "c117f140fb6aab0324c39d61612dafbbb9be0d36c9a7a7d854a3ab022112e0b4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable-hdpi/splashscreen_logo.png",
+      "sha256": "7f85a9ef0a11892f6af38ee132761839082d5ab8097a041e8bf39eada844d90d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable-mdpi/splashscreen_logo.png",
+      "sha256": "7721784960896ad540de82e3cdaff111c9b5a865afe284ec7f09579e5b3cb0ff",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable-nodpi/wallet_logo.webp",
+      "sha256": "40fd6c5866f800d9050e114cb8b1ce0613c955731c1444823207278b865bf428",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable-xhdpi/splashscreen_logo.png",
+      "sha256": "dadeaf20f31377c2301e0ee71457333e9dc9310fba787ad2c844873fef2676b7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable-xxhdpi/splashscreen_logo.png",
+      "sha256": "795b882d7fa72deba7f6dac9ec27415fa91ae0da4a5ccc1447ad49b520d91295",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable-xxxhdpi/splashscreen_logo.png",
+      "sha256": "c6dcc79444449c83d277c1a258fe02e6d0b6a29b8daae14a2736ae2a15cd0a99",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable/ic_launcher_background.xml",
+      "sha256": "51fca95679d075ddbe2b9fe7ad2efb5ef545c5770a9ad6cafe8bf610c18c67be",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+      "sha256": "738e3aaad53180caba1419a6d5db8465a0742662fe59a4bbaf05f1061cbc3390",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable/wallet_logo.webp",
+      "sha256": "40fd6c5866f800d9050e114cb8b1ce0613c955731c1444823207278b865bf428",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/drawable/wallet_logo_splash.xml",
+      "sha256": "b17bad136a7237a923029dd518e355a931b6b9b9233bf445babab67bf7322e14",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "sha256": "4695650219221a8a70d9aa16e683ddfc6587c52ebb465aa43508c94bc9fd6d34",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "sha256": "4695650219221a8a70d9aa16e683ddfc6587c52ebb465aa43508c94bc9fd6d34",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+      "sha256": "9468aeee736aff7ce041f22888c3b32e931253b86f8abb3a501ae24006e4e749",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_background.webp",
+      "sha256": "f5672b75ca1152a2ca15a419b15014f8b685fc0d73f070b3747ab385b8ed5394",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp",
+      "sha256": "77618c4cf15ddc886bbc14baaf365e367db07d7fcbb859dd261519c009ad4f95",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_monochrome.webp",
+      "sha256": "6e51d5d21d70387839fd9db5630a9010eec20fc0fa3a8483a6fa71ce96e5dddf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+      "sha256": "4489b391a8eda96adc098cd61052bc239026fb017c332f38179d0c223b9f833f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher.webp",
+      "sha256": "e881d06d47271cd0c1ee032ec4bf9ecc1bbd5a578a33e6614d859f5c2b92f5ef",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_background.webp",
+      "sha256": "0a27222f51b9eb447df820343127406d08c29bc4356c932579368bb0bbd32875",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp",
+      "sha256": "57e24fa48a9e5c5e3925578476021d9dc25d00f23ae59f7c94dbf7e5c3badafe",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_monochrome.webp",
+      "sha256": "e603c82ad86fad422fdd2b9076cbf3a5c9a7e05de0082e5327e8d2f06134af58",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp",
+      "sha256": "9c463ae128cd6efbf747b589a1d2c0048e04270f97edbf35b0549e95182218d9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+      "sha256": "1728e88ae7d91959bea34c2c606a7518516d77589accfc60a5127e1940567e0d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher_background.webp",
+      "sha256": "6601c65d0fda77c3ffc9ce384bd51244e03318c99489889b71fce33cfbb55f1e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp",
+      "sha256": "9fad443a373b2d608657e7f0f97705ff50d759eed0f84e2c6bc7f7054b37f3dc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher_monochrome.webp",
+      "sha256": "cc1683b7903036bd22920eab577440b2b47220299d218252734f5cd8e1a17d3a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+      "sha256": "fc740dfa8f201f9c73a41f0b798f2ad5b12006108e1c464538c2f27bbcc17e38",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+      "sha256": "7223d29153530a85345a7446e4359127ad079ed6bb95c53f120f04049e7112a3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_background.webp",
+      "sha256": "65387f63ecdaf0e38f88ee687c14c08796f209fd37477dec25a29b29c57c42e1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp",
+      "sha256": "2900cbf264c8e5f054e5775517a7b0f74d9b70584f50c63313ae8fcc614dc789",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_monochrome.webp",
+      "sha256": "d4fb8abda16452b72fe3f3c5dc57faeb21e7addd285edd15f08b7eca02bb5253",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+      "sha256": "b7d53206697108516f1f69a5ddc0dfacb28f01c51055ba1b2aa2a616567eed6b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+      "sha256": "473b1670b6f73ef11c3b968b8005dffe7de68d303dbf47aec20f6d72e5e596f2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.webp",
+      "sha256": "bdcb69e524a83dc66eba67b572aca33525be7eaa661707acdbd66f89c40ef821",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp",
+      "sha256": "9bf8d34e593642304891d175ff51e9b793e18bc4449eb0671c3481438a8bf1be",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_monochrome.webp",
+      "sha256": "6c9c87eefa8a9c30b558006fcd96a5f754e6e9dc7cd301ca69d683e901076634",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+      "sha256": "4dc18b7d9bdbd3a85247a87f40d9bf61aa92a8ce0833481770fc7f48b3330a08",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/values-night/colors.xml",
+      "sha256": "c30a9f37e6b34372e1db8c812d64a18719acf7c52c11ff2f7e5e5ed5e05c2072",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/values/colors.xml",
+      "sha256": "d6746981b55772aa27aadf8deb95aa6ea9a8680e38dc568b359a574e5b017780",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/values/strings.xml",
+      "sha256": "f31e69d301f664d330051bfbe6587e2b426e4e271bc52f7039b6c5be545185c8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/main/res/values/styles.xml",
+      "sha256": "89f5ae1c1d39d0a4cb09c824e63874565f7e804866d6734002475eb67dc45193",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/officialDirect/FIREBASE_CONFIG.md",
+      "sha256": "d17d4ab229102db9e2e065dd3f3c6092d9d39ae8c692544a7b920e4b78f4bcc8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeFinalKeyUseBoundaryTest.kt",
+      "sha256": "d2f9caf64ce7b302ef5769a354671e48a5a8a8b5b8642416ed9cb10789dbf14f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeHandleIssuerTest.kt",
+      "sha256": "ae13ac2d2f98625b5e86c246edaa6377c0e2127afcbfea379aa029d2da800b82",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeNonSubmissionPolicyTest.kt",
+      "sha256": "b3ec0cee829e874d67f36086f816132bf064bdfd74fcbf403f7ee58058b4e4d9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeNonceRecoveryPolicyTest.kt",
+      "sha256": "387a9ebf888b0bee760a104b5eb18bab9539828d1b040bfc0425342a494483ba",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeReceiptRecoveryPolicyTest.kt",
+      "sha256": "96edf57d2773e2f18080409f226cbec57393986aef8793a0da9e172eb9239faf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeRecoveryDiagnosticsTest.kt",
+      "sha256": "b345bf4c62cc79577e566fdc74b05648a83cdf178a7c53521c03fe478fd0b5fc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeReplacementPolicyTest.kt",
+      "sha256": "726fcd7e527b436ef3e33c0f6a30b79f68442f6142b8e607515c547c5c51bf20",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeReplacementRecoveryTest.kt",
+      "sha256": "643f993051499c7bd223929382b00c894fe7a30eb77270fb3d0b2e90c27bd192",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeReplacementReviewBuilderTest.kt",
+      "sha256": "3f29208e2a43342f70a07c41919d4a67e383ab18f3549cdfc9920281b4744965",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeSignedTransactionVerifierTest.kt",
+      "sha256": "5df58322e486a2b0e5556214ea9fe3d401a16f9ca0a3d88436cceb424fdc40d3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeSigningBoundaryGuardTest.kt",
+      "sha256": "3bd56cd949109fee3b80188fe5211d2fc022c19bb4b6a7282790661fff2b62e3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeSwapPolicyTest.kt",
+      "sha256": "5934cf52e3b5e69ea7ef7f3b8af38716cd5074d92ec059b5db0d1aada2287054",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetNativeTransferOperationGateTest.kt",
+      "sha256": "924f032218b72848669900b4e8a0dc95f2343769b13513989e211ea4e58b58fb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetSignerPsiEnforcementTest.kt",
+      "sha256": "aeeb99965fb24646ff8a69b9fda22fb38461353d5101c35c729a90462a93a392",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/java/com/aurionxi/wallet/mainnet/MainnetSupportEventPolicyTest.kt",
+      "sha256": "fa59f4d88c0b2655e8c45192416e1fd0d1d12781e7ff6b4c1f4dbed678be7323",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/app/src/test/resources/swap-ethers-fixtures.tsv",
+      "sha256": "15d63d509f98c4fb5d6099f75ae7af7d20dce1cbb8bd06900c862f7f63df0fcd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/build.gradle",
+      "sha256": "f3405e651eb9d821310928af26eca78bf7f1af9d3d47349f9d7239f77fdd4060",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/controlled-proof.properties.example",
+      "sha256": "1d6d3d812c4b32df018af92925d2b675ce9768f5fda719c4223280ebbf3243cf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/direct-app-check.properties.example",
+      "sha256": "ff1216b9519a0e174a2fc03aaf5d464891715d31cf48dbb2eee006d30142cda8",
+      "status": "new-public-file"
+    },
+    {
+      "path": "mobile/android/direct-keystore.properties.example",
+      "sha256": "151f3c7228baf5acdcc7e0399fa2068fa035fafa20dcc367e6bec4049c026fc8",
+      "status": "new-public-file"
+    },
+    {
+      "path": "mobile/android/gradle.properties",
+      "sha256": "cc9aba0d60f9983fb55a4b32f0430e460bd25aca9f4393eb340b6fa5bfe332ff",
+      "status": "public-adaptation",
+      "sourceSha256": "33f43d8bc494e6e764181b8f06d3de90756cef89b855ba6534768eed039263fe"
+    },
+    {
+      "path": "mobile/android/gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "b3a875ddc1f044746e1b1a55f645584505f4a10438c1afea9f15e92a7c42ec13",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "1e3d87ddfd70069f68afa0c9ddcaab26913c3baf3d809447b0362d2d49f57325",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/gradlew",
+      "sha256": "fb68debc1b1acf8ec55dc0d5e5495e1dedd0bd6b61f304bee61613eeb2bd9b92",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/gradlew.bat",
+      "sha256": "982f1b2979dd2d13505c11e92192ab43eef338242ca61587f86f8d7fbc86f67b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/android/keystore.properties.example",
+      "sha256": "a6ab9014dc9557d656d17f8415f06d7845e769b75ec6406dc50bc412eb1944a0",
+      "status": "public-adaptation",
+      "sourceSha256": "5c290a81877c8c6f43a3e1e9b342b186dd2fef0449f031e94d048cb3d9fe296b"
+    },
+    {
+      "path": "mobile/android/settings.gradle",
+      "sha256": "95ba1a5016cdaca658e7a76b9b844303f56858735f12d786828b64b66ebcf2b2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/app.json",
+      "sha256": "e08be7ed10b9bc8b26d21109d908d072c0186067e6f0fa7caa0e14f607755b07",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/eslint.config.js",
+      "sha256": "1d1faec54400a9083847681d5bd880dc66baccd2ba9194d49d5d3a419fc6eaa5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/modules/aurionxi-argon2/LICENSE",
+      "sha256": "fb3ca4a837f5779e83cef89b78253a8949cfb9429c340309f62d0465ec6610b4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/modules/aurionxi-argon2/android/build.gradle",
+      "sha256": "95d4ad4572f3a69e7a2c8586d8e16a695faaa74a5cefd1d216eb4d77a17b0b32",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/modules/aurionxi-argon2/android/src/main/AndroidManifest.xml",
+      "sha256": "21058c692532098e42afc39cf09de946c38229ec414bb7ac32f4fc90ba9a5f45",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/modules/aurionxi-argon2/android/src/main/java/com/aurionxi/wallet/argon2/AurionXiArgon2Module.kt",
+      "sha256": "7a3edbedfe6a7d75e6da1b80ff7e76b36101f24693b8669299a3f086edd6c434",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/modules/aurionxi-argon2/expo-module.config.json",
+      "sha256": "fb9d36e10b7396cda0cea934fceea8dbfe1c8956eab8db806bcb9775ca672c10",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/modules/aurionxi-argon2/src/AurionXiArgon2.types.ts",
+      "sha256": "23906bcb81a1f9e374c197ab34c974272b9ddd34a089de3d19a413012474d2bc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/modules/aurionxi-argon2/src/AurionXiArgon2Module.ts",
+      "sha256": "26a678b37ee6f07e88e1b977a8d2979f583c410a579d1e7f0bb196e4ea7b5f1e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/modules/aurionxi-argon2/src/AurionXiArgon2Module.web.ts",
+      "sha256": "b0e0429a0c51ea07c6e81f7c276623bed414fe02a1594cecbf9b677bdcfdf546",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/package-lock.json",
+      "sha256": "e107e4599e5bdcced08a5404c4fbfca3a6f22280fb7921097abc5fff82bf4e30",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/package.json",
+      "sha256": "befbceadebcc7fbc409430e4367e9611d9333701180c4028aad526e0f644021c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/_layout.tsx",
+      "sha256": "433097d05da5bdc44a296cc1ad722b3ddbe1bfa54ffecea37ba4ccd7fc6b9459",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/index.tsx",
+      "sha256": "ac37e66a091f080a1867dc86834eab564fffcc796de1a3a36ff941dae2b4a078",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/_layout.tsx",
+      "sha256": "0a49fed7eba47b25796f7063b7417ec299fbde8d2d822bb096cd681b3fcc9e9e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/biometric.tsx",
+      "sha256": "d18cea3858e8cc109beb62278a83d5b5fabcc86a81ab12ffdc8795bdb8ac2a20",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/canonical-migration-review-fixture.tsx",
+      "sha256": "5055f92ad50d5d2d58f1d139c3a8b71bea22a32cca2c8499e939bf735302724f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/canonical-migration-review.tsx",
+      "sha256": "e97dc7c9287a19871fe97d5f590f201d8f61a455d9e8d449a93724aa405e97ee",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/identity-migration.tsx",
+      "sha256": "30e8a8b30daee3bf51b4c006667c7eadc1c525c775489954a8fac0bd4a0e21da",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/identity-transition-fixture.tsx",
+      "sha256": "4aefa0e8a6030141a57e2b45561dca27a66cf666f5fac9e340d1f9584cc951b9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/identity-transition.tsx",
+      "sha256": "fdfdf975af7c4a00316c76a5e20f6fd954b1959a7120d0f51047faca53d17657",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/index.tsx",
+      "sha256": "84990525515f765478ecc282a27214262bb9f387656cfa63b259c0efad8ab926",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-activity.tsx",
+      "sha256": "de980f4d5cc27df2b318f393858d8c8316d071a9e70be8341eaed5e8856039f6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-assets.tsx",
+      "sha256": "1f75eac73b00fcde1d95ff433e8c1c30986d996e553b300df4b557dc1ac3b11f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-biometric.tsx",
+      "sha256": "dbcb8870160d64bd4a552529bf5a8160958ee88faaec9310956bc4a6c1a2b77e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-native-vault-migration.tsx",
+      "sha256": "345ee35df79eb92df65b0fd807ee8c01d1fd1348a46a8472fd0dc79daa6d2fc3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-onboarding.tsx",
+      "sha256": "7bbd62ade2535dee8e25015b3676857fec928e6826f5aaf5215833d5a2586047",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-pin.tsx",
+      "sha256": "bd77e6da00db4221e8f16c5ea5b3e4d06072257e5fdd4b7002cb4da2f46203f7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-readonly.tsx",
+      "sha256": "44cd87f512a48e93d56a43662113db257021fdcda25ca5796cd3fe18f1c2ab35",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-receive.tsx",
+      "sha256": "99e3c17a70d927bced69b0a81b42942e103d943de7bb0b8d4d7534e4cf4b7492",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-recovery-view.tsx",
+      "sha256": "c19e1ee49e508f799e51d631662159537e3432ca827d008e983bcf2631b26f12",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-recovery.tsx",
+      "sha256": "1878307bb76d566e470e387d2ea40d27a42ef3717adffb6215ce259dea865dea",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-replacement-review.tsx",
+      "sha256": "1c4d5eaaf2de7a6e96b9bc9a1f162dc731f7df91346073ff4eb5941f7eb1d22b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-responsibility.tsx",
+      "sha256": "64f67d31b70e4db276ae802683218d5c70bdb6fc29dc3a0a910a53bbf5b87b51",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-secure-confirm.tsx",
+      "sha256": "c0ff84f10517fd30fee62a147918b750df8837d1caa62348a659fee0f4fb37b9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-send-review.tsx",
+      "sha256": "935ff4ac029627b829bd812d76c251f508da55ab78d188fc5f217006140dc607",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-swap.tsx",
+      "sha256": "39bd3a668e947e446b71e51c06a5e615eee8ccfab8bad12209c15e39d9631688",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-transfer-preview.tsx",
+      "sha256": "989b3fc9e98fa3b700facc5eb125fc826a8e3f690fc01396dee36b9cbc76adcd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/mainnet-unlock.tsx",
+      "sha256": "14d13884e6c8cac00bcf5758f48edf723d18b73b7c4a257191c3a69524054706",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/pin.tsx",
+      "sha256": "ca8622cbfa1eb28ab25f72729dd9bc7f30d977d8325748b8b51a7808b65dced0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/public-address-registry.tsx",
+      "sha256": "a22cb920e495759fbb8f25688ad2a999a8271fa8c02cc7396879c3edf2b1b724",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/receive.tsx",
+      "sha256": "24b032bbdacf440fd21439cbda71a229f800e74fd24ab37fe367e865e7d97e1f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/recovery.tsx",
+      "sha256": "316c836324d48655e6beb91aff6ac873e8fe5a767e17ba0e2c99c8f2085808c1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/responsibility.tsx",
+      "sha256": "01c6fb072e105c0732d4ab204e306f9598d34a196c90c9a205e6419de4e14ac2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/retired-wallet-cleanup-audit.tsx",
+      "sha256": "759bdc0c30db6257b29b558cc6216ef030f8e6ddf104bbf007414cea52c0871f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/retired-wallet-cleanup-execution.tsx",
+      "sha256": "918bf1ac779ae83c1f5b84e058370323617ed5653661312f125ec21c189bf4e0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/retired-wallet-cleanup.tsx",
+      "sha256": "085e3e2b79e79b614bb66bde87fe8b5141ff2528bc2956b2a2a17b5d2163c6d2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/settings.tsx",
+      "sha256": "ce542879bcb448bb99fbce61905da340113641ce440fd089324f941f37505a29",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/synthetic-vault-replacement.tsx",
+      "sha256": "254ed4f00d9f197678f4a6d2eb1417fd8d081e9f51d3a0b4f994c76bc15bd9e2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/testnet-activity.tsx",
+      "sha256": "385c441959a30a23ae3945e0e155ec8d503b3b486cbe00fa998d2661cc02995f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/testnet-assets.tsx",
+      "sha256": "0d92609791c805a249f67aea1c48caa67f63d20d13c37c14db5ba662149402b4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/testnet-dashboard.tsx",
+      "sha256": "fa59062e92a31ab8452c4faea187b941458911155cb08c875511ecd72e8c5ca2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/testnet-namespace-migration.tsx",
+      "sha256": "239ea4988630993dbe3291e1b9fe020608761ae9bcd61a727212cd3b77d4ac92",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/testnet-recovery-view.tsx",
+      "sha256": "671eb670c9b23c97caeaa1f8851061dd2c01a4d7397076dbe798a1fddf5bf861",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/transaction-confirm.tsx",
+      "sha256": "d209e63e1efc3ca38b2b738362ab3393ebc748de8f46e5711fbdf1a1df85ac48",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/app/wallet/transaction-review.tsx",
+      "sha256": "f4d85e63a0add20ae53d6f7df2c9080a2c1d9c2b8a2282c15dff29d494807ccf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/assets/logo-ARXI.jpg",
+      "sha256": "2fd364d48402e42da7e2bf4e7b55fff704757f3cba115def4f9ad54aef5a32fa",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/assets/wallet-logo.webp",
+      "sha256": "40fd6c5866f800d9050e114cb8b1ce0613c955731c1444823207278b865bf428",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/__tests__/mainnet-dashboard-screen.test.ts",
+      "sha256": "b446ca206ef0da65e2cdb4ecf12ee91bedf28c021aa1a12b29fb2845194be9e2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/__tests__/mainnet-swap-screen.test.tsx",
+      "sha256": "67662c15148c69d983abc667d7beebbdd320a420a8e582fe47e46fb14ba69f61",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/activity-card.tsx",
+      "sha256": "76d00eb6ee7d77d647aa94c433454807f8b22e87c66639b29b20137d373b297b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/address-card.tsx",
+      "sha256": "426a0f595ec7bcb727b2289d2d721cdc8320dc563f55063875dac62372b10858",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/asset-card.tsx",
+      "sha256": "9934ce511a02d0b4e1c415c6a335a1a719084b6e2bded8dea8f2c337fd0487c9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/biometric-status-card.tsx",
+      "sha256": "796b258c0c01cb4e0528471c44fb2a5534707174802ef8d441354fce0cd83bf2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/canonical-vault-migration-loaded-start-screen-harness.tsx",
+      "sha256": "e223d2a04477bd105baa27971f0d4c16be8a1a45c54ff77454b710aa2d83992a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/canonical-vault-migration-real-pin-loaded-start-screen-harness.tsx",
+      "sha256": "b827390bc6654bb41d7d7b395fe272b0eb90f22b344f48700a315440b370df11",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/canonical-vault-migration-real-pin-start-screen-harness.tsx",
+      "sha256": "990df5e170ce5947627f1a350cb08a1cc5c7ceb9f8e4d5c29449e52fdf0f4f13",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/canonical-vault-migration-start-screen-harness.tsx",
+      "sha256": "963acd9906649ca46297e3fdf78753e8b9cc04b35b4437ea1536b13d31614bc6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/canonical-vault-migration-start-screen.tsx",
+      "sha256": "324ea02a65ddcec79912f9d5023b36c81c3d337f17fe66a62dd5bdc31d58004c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/canonical-vault-migration-status-card.tsx",
+      "sha256": "3bbb04fc25fd50464fdf8c0adbf2730110f7b93c003023a1aaae3faab63a55cd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/explorer-link.tsx",
+      "sha256": "4ee48fee27c6a06222f8b69c481f4ad8d71c512c5c390ba1edd1f379c9c64618",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/mainnet-activity-card.tsx",
+      "sha256": "d2cc22b13de3b04a40bb7d03e963f552e38862b3ce68c74db79998297293f781",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/mainnet-support-report-button.tsx",
+      "sha256": "39e43fdc5ab990e7ad8c8d301da8f9512e8755f72712f8a04a40a0d2d15bdd53",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/mainnet-swap-asset-icon.tsx",
+      "sha256": "cc1f45f843bdfa49bc1f22ea66e1690608e00c172cc49191ef39ac00be33fec7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/mainnet-transfer-recovery-card.tsx",
+      "sha256": "9ac13395e3a946aefb5a4da93557a2d8600eef88df8da3fc069ea3144ecb45f9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/mainnet-wallet-brand-mark.tsx",
+      "sha256": "d29190971b036f47f7a0e12d4bfb0021b3a7fb088c9514f117cda096b395e3d6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/network-selector-card.tsx",
+      "sha256": "c8b3b98590d2d9252544f47658a76909545e8d04e89b4d8266c012571dffe6c2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/status-card.tsx",
+      "sha256": "04df7cd1b2a0a396b4f2fe0e72de826f1923b5ee7170daf8357b7ec38fe74057",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/testnet-transfer-status-card.tsx",
+      "sha256": "0216b74c8b0e5be974dec9f8829af2b7105e3d6641bdc70d76f75cb2b91bdc1b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/vault-identity-integrity-card.tsx",
+      "sha256": "8e8b24c9c5e3fc179fcb0152fc96392a6cdd52329d206edd4a98c5a231cc3477",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/components/vault-replacement-recovery-card.tsx",
+      "sha256": "5923b4c6f61424ada40a39efc4c38ecbe01cea4b938be9b551afbe29a4648d35",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/asset-targets.test.ts",
+      "sha256": "257353c42ef5f188c82642176be8eca586238704f1cfc68c50617ec2df5fe649",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/asset-targets.ts",
+      "sha256": "ec996e26545aeb5bf136b4a35b670263e2ac9df4be9a92a355219cf492cb75b4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/assets.test.ts",
+      "sha256": "9e1b036899dbfc58884f9269d23acd7b3ede0f794f8e170bb1263965cb0fc210",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/assets.ts",
+      "sha256": "e68ec6b4a89d641c30011ac2f08333c9b4caffcd56ae061b9bfb16505877df3a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/mainnet-configuration-intake.test.ts",
+      "sha256": "458925a7132e9b121b382932db0026a8124aa8464838a1046a25dbde513b7688",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/mainnet-configuration-intake.ts",
+      "sha256": "2cef45920c7a4ec910c8345a531448a9a205874ad769d18f60ae58a67fab609b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/network-targets.test.ts",
+      "sha256": "1e881e154acb2857890c604419c1fa62b9b62495a38a56685117721e1086ba37",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/network-targets.ts",
+      "sha256": "968fcdc6e3ad6e1dd6dbbc74b3a51fd92cccb2db8e830279db16064ab9af073b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/network.test.ts",
+      "sha256": "122532438414f5c36d43bf84beb7b08fb19556943932225d426342c8e41d8ce7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/network.ts",
+      "sha256": "523278024edfa5e3c001f32bb6c0cb536ae86f62d9ca99bec598458b026811ef",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/production-package-migration.test.ts",
+      "sha256": "b3c0c3bccfda94cf77da74f68d41ea05dc377cf6aafdfcffbae1c77b2584a8d7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/release-build-config.test.ts",
+      "sha256": "af62aeb8dd4d69297ab15b230133c002f336ee20860e8c93aca25b3550f7c0af",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/release-identity.test.ts",
+      "sha256": "01876fbb4b7b126bafa2b8e741a68a2a39a848af120253043cb42b426c01c455",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/release-security-audit.test.ts",
+      "sha256": "a0861cfbedd017c816dbe1f191d58eddb75d642dbf90cceaee2f280c1cc16861",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/config/release-signing-config.test.ts",
+      "sha256": "30110cb2229706bff329961fc530351c40c9025bbfcc7490c45b644861a84319",
+      "status": "public-adaptation",
+      "sourceSha256": "100bb1cc26c123c9327d191d33a61691ac2a518a95cd6ffb4afd607abf3af20a"
+    },
+    {
+      "path": "mobile/src/contracts/arxi.test.ts",
+      "sha256": "0b5be8d36ac606e12fc2c5d251d208f175f14e73e3f7e2de68f1934d440db0c0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/contracts/arxi.ts",
+      "sha256": "ce88c0cc0d87bd331be191c1badad541f0d65a77ce75ebd8e10c3533d6fa2702",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/hooks/use-activity.ts",
+      "sha256": "858b38b1826227f852b43fa7f75a4fde5ae03bf7b6e242d56f77ba38849deea3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/hooks/use-mainnet-activity.ts",
+      "sha256": "9c30260cb1756d813e1d3213ba246bce357bc01189b1f59d12ad2694072dafec",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/hooks/use-mainnet-transfers.ts",
+      "sha256": "80d5f3f7f9e07038f79a232c6dbd9c5886f352a933df0473f3c1b9290a788550",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/hooks/use-portfolio.ts",
+      "sha256": "956191c41b4238f62c1282b70ffd58bcbe6b119f69b4f518e02a1243e348fb59",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/abort-aware-pin-verifier-adapter-core.test.ts",
+      "sha256": "7abf593338612fe0865689ebd79348cc1166ed1523e2a90373f31459beb0930a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/abort-aware-pin-verifier-adapter-core.ts",
+      "sha256": "b6c2224d8e272162279cfb27d2bb47e1b3b4b4c1cb151004fa64a5ecf327e7f9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/active-recovery-vault-create.ts",
+      "sha256": "b93c05123fb9246a917934a7d4c2f70ec029015ce2c46fe152090f7a2b3a590b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/argon2-policy.test.ts",
+      "sha256": "0f2bef03a4ae5c82f659a583c40ade3f5c140440da0a04d6684ffa60cc0971eb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/argon2-policy.ts",
+      "sha256": "7f49805ff103aeff1ee1a0b119591fd79b1eeba2dcbc0f5b74dbd33f63d56f41",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-authentication-core.ts",
+      "sha256": "955c273a7f56132b6ed62bb077f8a0243330d621e0a74e26fd49c351b87c5d51",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-authentication.test.ts",
+      "sha256": "0fc1738df8f1e04c2ec739a9dcc1c561f8739aa0eaadd033137725aa9163b359",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-authentication.ts",
+      "sha256": "767e87455e897b8e16c3a1598909f2957158c6f2effaa60e6895ebab66e24f49",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-capability-core.test.ts",
+      "sha256": "b567a1fbeff5ef0c4e08aeba53044322f13cc5c1f52556d8a66a2725d913ce81",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-capability-core.ts",
+      "sha256": "77e6776361a618ad34b8a246b2c2a8abf139c25b022593f0c72ca53099920834",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-capability.ts",
+      "sha256": "21b627c31946a185d774a6b95b4bdd564233d3835bec54698f020feb5bd950d7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-integrity-core.test.ts",
+      "sha256": "300f71f291e50d72eca886b5cbd81b38e11acce1b59b6d77d60f678ec556c4ee",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-integrity-core.ts",
+      "sha256": "8376dea9440b87749bbff0793dee982e2d7734f2f102f92190494a27d16be180",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-integrity.ts",
+      "sha256": "11a3e4f259e855f0867b4f13d5a9669cac44ce9127e01bed6f6dbb1d2c0a65f9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-key-store.test.ts",
+      "sha256": "d2b33da7a3f6aca0e7461f6be4d372f3d813ce84c64866231dccd0909e3e49f3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-key-store.ts",
+      "sha256": "7e59e69a476dc99bf99a0d8be9477320660af62c819f2aebab2786b849784380",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-opt-in-core.test.ts",
+      "sha256": "9a4a8def345ff95da2862160e3b55be157304a727480ababab0302ba56f3d81e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/biometric-opt-in-core.ts",
+      "sha256": "cf799433c5721c231533f9eff4caa27317706e53b6c06106913e55c665e05ad5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-authorized-intent-executor-core.test.ts",
+      "sha256": "34cd9e45c5bc8e9eb85e9ec2f881689d0a33141275f94a428b221a47c2c96e58",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-authorized-intent-executor-core.ts",
+      "sha256": "7f833dba222e30bf5f2c6287a5842e7d42c6883a747fb4de6d4fec1b4330c748",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-authorized-intent-executor.ts",
+      "sha256": "2f489711ab9ca8588c957f0894243ecf220656684db6013d705f17073fd45b78",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-candidate-removal-executor-core.test.ts",
+      "sha256": "fcc2bbe06a08a1d51f29d9fc0d0170eaa7790560075a6951fb83be9cd591da9d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-candidate-removal-executor-core.ts",
+      "sha256": "e6b30f9434afedf874c420ff3df1362709d140bb99dbd3a661999b099b9da117",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-candidate-removal-executor.ts",
+      "sha256": "929efb0d817f46e13ee100c496d01e710194012df3de31ce23dde4b8c34ca904",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-candidate-removed-executor-core.test.ts",
+      "sha256": "4c0fbc48870d4a0994d1633673108eb35a6b4ddf0d7f675cba3d894c980d1bc4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-candidate-removed-executor-core.ts",
+      "sha256": "5421f072cccde743b6b823debafefcc2c608cc58d8c1c82d5cb1f55a91218410",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-candidate-removed-executor.ts",
+      "sha256": "d91bb3804408b9c3279691bf9c242a0f858ab13d693dd06df6033f1efe49465d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-finalization-executor-core.test.ts",
+      "sha256": "b065ed036942d0eb55b8a3eb9e5f729dd231a2382d3d3e2681713b8d7847ad70",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-finalization-executor-core.ts",
+      "sha256": "66b8280d7e4d5b6653305c2fe871babb20b58a1532027fa1124a94830cca4d57",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-finalization-executor.ts",
+      "sha256": "569077baad7bbf015c5917368349be5d5593d5911af56ff948de9329b4b4eb34",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-audit.ts",
+      "sha256": "4f7f020fa8666e5c624629d0071aea2ea33b612dca928e6512fda49bcbacb4bb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-eligible-snapshot-loader-core.test.ts",
+      "sha256": "bb0deb4df147194d679b862dbbce70c9dfc4169e615c8327f26b9c69aae4ce8d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-eligible-snapshot-loader-core.ts",
+      "sha256": "1984819b871a85b92d7af4d48d9225c2c1800106005431387266711e597a9b35",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-eligible-snapshot-loader.ts",
+      "sha256": "c5d9e482ee0d20cf9f8013e7f561ea55b6df39512d6c411c1897326098c6133d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-ephemeral-submit-binding-core.test.ts",
+      "sha256": "97b1d318fed6fbe85694b1b0710cb64e27dcfacf51b5a385fa071424db58cfa4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-ephemeral-submit-binding-core.ts",
+      "sha256": "c42810a579e1bac268c5dfd73f703d9f9d3d72d7e4d6e75e75fb3d7d1dab6e2f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-fresh-snapshot-pin-verifier-core.test.ts",
+      "sha256": "2681b99267cc03497857ed070413c80d7e180815e30c2f35026c2c779def54ea",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-fresh-snapshot-pin-verifier-core.ts",
+      "sha256": "bdf732ba021ee9c7882060c37ee69f46d947e386111ce7b94e10bc87824a6bbd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-freshness-attempt-gate-core.test.ts",
+      "sha256": "a0a6eb1b50b8e1dbfb5acda192e3cd541eed8bbb943b5ae164c3b8ea79e163fe",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-freshness-attempt-gate-core.ts",
+      "sha256": "5005bdef48ba2734054939dd39bd7a3396927e11311f101c7b69ec97a62fdd05",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-freshness-read-timeout-core.test.ts",
+      "sha256": "b0870f7074668c14d2315bfa6a650ea83bf7dbc3aa1b779053c63cafd97807ee",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-freshness-read-timeout-core.ts",
+      "sha256": "cc93fb5da453585726da0ce7bf1c75a00eb0628f71ce728186ad7ec2a7fc0faa",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-app-state-coordinator-core.test.ts",
+      "sha256": "e4cc6e569cdc3d0a04553834cc9e61abb79bbe72a1a0a970074d9d1e8becd691",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-app-state-coordinator-core.ts",
+      "sha256": "355942d7d2417845a41111699923d704f0398665ee60ecc9175db4148c3ed8b3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-cold-start-core.test.ts",
+      "sha256": "36b50096e6c070a1ff65e425fd8bf35695d7fd2d1d490fcebbc8cd0f7e48f69f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-cold-start-core.ts",
+      "sha256": "913eb4c5d616d1d1bff2ea205ba0df1722528af80c8eb03165a97bc0408a740a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-lifecycle-disposer-core.test.ts",
+      "sha256": "a83677b749303dc4019d32d0fa332fe3c29b7470a0d8d4a2a6847bf12b2c6f02",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-lifecycle-disposer-core.ts",
+      "sha256": "5ec08dc5aa0de4b7989691b1003a546fc4b0efccb1f6d834525374473f9af527",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-lifecycle-source-guard.test.ts",
+      "sha256": "dadd95b87593c7cfcdd936da7e24d0a98d048d356bc5c1c2c366989912e99248",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-retry-accessibility-core.test.ts",
+      "sha256": "c8d993ab7bf8a262a180aa3a14858568c204350f564d2e0469e71d4cb3d1650f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-retry-accessibility-core.ts",
+      "sha256": "d41e3ea6b4bd65d32f594d9edbc95ec1e6c6220443793e164c65037334433971",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-retry-core.test.ts",
+      "sha256": "9a37d074fcd9d30924c650683ea73515eaa615e29ae99d8a7e96b2f12a99b695",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-retry-core.ts",
+      "sha256": "0a5d1975c5ef195eebdcb90cba0bdb2552cd88e2978ea2dd77f40bab736fe2ae",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-retry-request-gate-core.test.ts",
+      "sha256": "fc4d46a8bb5b40c9cbf0855abc5e6273b802595f8df3ff378ba40fefeee026bc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-retry-request-gate-core.ts",
+      "sha256": "1fc23361bffeb2e18772f62d155bbbb3928d9f82e8fa9fa11cb462f7c82adf39",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-unavailable-copy-core.test.ts",
+      "sha256": "97fc087f53005a7d5a66189483e442d6129d66942bbed545883868a150ddf152",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-unavailable-copy-core.ts",
+      "sha256": "e6e9f42bfc11b83e56cf0a0836c3e3e92ea573338e2f1651f1c2088d43abe1e3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-initial-read-unavailable-telemetry-guard.test.ts",
+      "sha256": "aaac8ac0c7963b63b608550522b825cb3ef306803e6c81fb42d91f938829508c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-input-enablement-policy.test.ts",
+      "sha256": "fdc7b9dcd8a094c84ed2c164312013d202ead26acbb34e89f7a11b470a9ed7ef",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-input-enablement-policy.ts",
+      "sha256": "b866b210f7a8ba73f1a3bf394c629abccbe12eb32622fcc047015e40407047e4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-intent-executor-core.test.ts",
+      "sha256": "0b0984071245750bdd97d6746b1badc921454f97f6b4b54c334b3e53e974be42",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-intent-executor-core.ts",
+      "sha256": "cb0da27aa20dd893995aee4bb201267f2e94340444aa6fa0ac9c8dd95d69229f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-intent-executor.ts",
+      "sha256": "f62a515dc4f128e811bdcea19cb40b7a15b1ed556239804442d855fcae3ca34f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-journal-core.ts",
+      "sha256": "8f7c9ccd922e4ee3cca6dba055a1ce8d9d8cd3b7737cf3089e5285ec6d2c9224",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-journal-store.test.ts",
+      "sha256": "6a3c49bd187f984b6141ad43492d74006093f87f378ca8df6bdaccbb4884f551",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-journal-store.ts",
+      "sha256": "89701b1c70e8359936c83ce1bba86f0df2b763f79d910968d55cced31d281828",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-local-submit-policy.test.ts",
+      "sha256": "12052d18172eedf991f6c76728ad27e2d9cf137f8328fc905977640e6e833d5e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-local-submit-policy.ts",
+      "sha256": "824a75ae82482951de5a180edae1e5983b5cdd4eb690fd1ca6aabb1fb1d7274e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-mounted-integration-gate.test.ts",
+      "sha256": "1b3ae1611ef3ef7d885c705a9db6dea134a2f2e365abf8b2357e42c59020470d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-mounted-route-source-guard.test.ts",
+      "sha256": "a8cf662972c7754dcc4f6746356bc7a4e0df85ab73529d25428db21ada236f71",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-pin-verifier.test.ts",
+      "sha256": "fe688590148f533b6e13702f268e050c50b6bc54024f7e6e67d98eef7f01171b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-pin-verifier.ts",
+      "sha256": "50b508c1c452d568e67a19524cac54157cecf9ef57a062d9d3b7e5b2a8257cae",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-policy.test.ts",
+      "sha256": "5588b1cfd363619470d9267de9c44457a6dc6b12ee8e28e3e3057713d379e91c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-policy.ts",
+      "sha256": "a545ff8974aff17266d13b57e205be5dac3177d33131d225765c75583be2efab",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-real-pin-harness-dependencies.test.ts",
+      "sha256": "86cd362171331bed1d8a48c7f902770ec72d25786a631eb5ea286abcd04e4616",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-real-pin-harness-dependencies.ts",
+      "sha256": "4c07647bb0bc27f07ebe22be94486c8463b42188991f8f343a086c189a2a9389",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-recovery-coordinator-core.test.ts",
+      "sha256": "c50ee2826b8d35afdd28cffc9e385d76a94cbc5e9c42b7606ed6f4ad5393df19",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-recovery-coordinator-core.ts",
+      "sha256": "d79990eaf56b44f653203fa43518520cca5d9102050ee89b8c94187b1a73273c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-recovery-coordinator.test.ts",
+      "sha256": "24e6f8b6875713decbc1000e95b0c960bf142e841d5f7b2a19d91c67d626ffaf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-recovery-coordinator.ts",
+      "sha256": "efd2592c5bc8dfcb8a6d237b59b0395612bd0682891e09eee0be4bb9891d0404",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-snapshot-core.ts",
+      "sha256": "c2ee8c4e5b8545da8112e0e3c4f62fa059f61fa9126c1033d6d8f360c3a23811",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-snapshot.test.ts",
+      "sha256": "66d6b8bf6e1528b80aed652062f71561ffb7094a6fbf09c23b4bc3bbbddd9dc9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-snapshot.ts",
+      "sha256": "44bfe035be4c549c8fc01648d685cc56f1ab194861993407bd95f19da39bab5a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-app-state-coordinator-core.test.ts",
+      "sha256": "4ed61a2d080265e15c9d991673fb8392a638a1649b74124b0b2541461a2aa4e9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-app-state-coordinator-core.ts",
+      "sha256": "139eef36d12a63aba8d5951015ac75b839bd43865ff756aba789b1d53f4a80fa",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-authorization.test.ts",
+      "sha256": "b9f32a03599476750cdf938b14448e3a05840ebddcd76de2e47ee75c679d0517",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-authorization.ts",
+      "sha256": "c17ce4814e159f604fed43542ee0dae193c44c1ba5f44abb0c130ac15533a9a4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-controller-core.test.ts",
+      "sha256": "9a6402f820d1fb84e7db1109d81ebf0a78e7025fd092ebbb73cca40972e77bd0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-controller-core.ts",
+      "sha256": "4f5f86f9c3f43bc1a28d458405de21e67b2c738fce644f6c11d90a3b04912dc7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-event-adapter.test.ts",
+      "sha256": "1765f5d45cd85f7eee7472fb0f5dd264bc53a0bd4fb8629ead0c64784ae51026",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-event-adapter.ts",
+      "sha256": "1e2c2808fbdbf00d43c5527662a992d6350aabaca579c1c85a499d38ba686f4a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-expiry-scheduler-core.test.ts",
+      "sha256": "d2679c90d4c6d46faa800f28571662641d43d812877f881d7a3149ad3eab9d09",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-expiry-scheduler-core.ts",
+      "sha256": "3773ef0c7e25bbf85e61b568e43033505526fe260aaba4af1c25875a99111a9d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-failure-ui-signal-core.test.ts",
+      "sha256": "be030186df4df732913ae189f6a79df730aacdba1501c00bdaa652effbfe0621",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-failure-ui-signal-core.ts",
+      "sha256": "fa0fa8c00c16f7c8a3a5a681e6f57333200d03ea1cf8f0f1a69257d03c979c1d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-harness-core.test.ts",
+      "sha256": "8c1c6947b9bc5e5443a18edb69b7f60c226a85b331cce51347f288d17ade5908",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-harness-core.ts",
+      "sha256": "eca08a5b25a47d4b01dfec8af87c5fdb758ecf4ec116d3cbd7de9e507f83cafa",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-parent-binding-core.test.ts",
+      "sha256": "e6d7233e9d7201afcd63a6e50004faf723a06d1aaa0836c71f7ef212401eeb75",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-parent-binding-core.ts",
+      "sha256": "f4c28c6e0e0b3b1340ee55a9fa24734d8a1b6b63408b65bca3030fe2c9495d37",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-parent-session-core.test.ts",
+      "sha256": "6ddbd2e769e9bdbda219e896e407e0c6b08fd290c1aade3cc49fc66121543782",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-parent-session-core.ts",
+      "sha256": "2adfd27715ff0b3386f0ba5ebeb02216f1c560e6a2a42719bca85163f9ebd5cb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-screen-core.test.ts",
+      "sha256": "75dc453f5f02e5b46f271bc38db3b2e789cd8ad62708a379f0bd7c2db13a0ef1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-screen-core.ts",
+      "sha256": "fd0d29b6f238f68068d9ec363941bc8bb5cb8e810db5a87c01ab5483c64f12ab",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-ui-model.test.ts",
+      "sha256": "4ca073b626ac4fd40de76efbc7027020b1bc986b896a267935af4f9cc14a8800",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-ui-model.ts",
+      "sha256": "a9c1742e035d3142fb6c1decfea67ba077be4c23c5c270a8f6c02004cbb742c4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-view-controller.test.ts",
+      "sha256": "4edcfd6a8b9678d80b4cd160cf8682a3634cea8dec12030663e3906cb2c072f9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-start-view-controller.ts",
+      "sha256": "faefb3cc2032aa8b3837e922eb2c7bb0252f0948ef4fe93b687600446f3548f5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-startup-lifecycle-core.test.ts",
+      "sha256": "374449362f37f7d1a8b4e87d9464b499411e666f0a21acf4cfc3b75c5e636e72",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-startup-lifecycle-core.ts",
+      "sha256": "afc9ee128dfeadc3153bc7b54d432f2afa43b54b37df4edf5d3215322737a092",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-startup-lifecycle.test.ts",
+      "sha256": "8d6cf3cbd63a142ef79e8d264ab2ec18a8a019d97002f0d9fc7f206731b5d2e8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-startup-lifecycle.ts",
+      "sha256": "a21ec63ad6cd9dad660a404f158a575e60af0ae0d0e7da578acf67b547a77de2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-startup-policy.test.ts",
+      "sha256": "79b50809029aa2df04889427dc41466b6aa944110d2e3283b519b51c528dfbcb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-startup-policy.ts",
+      "sha256": "dcdf8353fa58a03631dccbbc4e30e0391d2f86d221f5991fbd9b0e03c610da33",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-status-card-core.test.ts",
+      "sha256": "57556716a5fe9f42b6896406cd974e64e4b99d910d9a30fa1752a546129b980e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-status-card-core.ts",
+      "sha256": "c51c06ae83fd7e194acf01b27fe534d579a09f452292a76f0bb7b7e1727f673a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-status-loader-core.test.ts",
+      "sha256": "8eebd695aa9d8fd61b6b8c9999fee02ee6ad607d31cec0f7fea8ecf150757806",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-status-loader-core.ts",
+      "sha256": "0a56667ea7aabe5c9acaed64a935769000a52989f7f95f0b9e9293fd55775381",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-status-presentation.test.ts",
+      "sha256": "81a4a0fc48802c0ec5ae4e0be540006b046d7c6d65b8f8e344627fc5ffde9c1f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-status-presentation.ts",
+      "sha256": "a816c12b4f8471f3071759b5bbf6b47be60949306e4ffcb79e67957890c2f7dc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-status-provider.tsx",
+      "sha256": "f83a8566c1d957322c6b65f605569e64e0f75f86abfd63dfff1a0ae40ab1ec39",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-write-free-fixture-dependencies.test.ts",
+      "sha256": "f0cf0242879229d08f3fcc4209ff7eef013f7b1ec3adeda88197a5046eb9a408",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-write-free-fixture-dependencies.ts",
+      "sha256": "808dbe8ebaa46a4ff238da2ae7400fa1e663dfbb34d102cb90e31948e9e06cb5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-migration-write-free-fixture-source-guard.test.ts",
+      "sha256": "64a3ffb0905bfce9ddd9b158cd1d9e3ca3f8486304d8dd1ee02486cee1239d40",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-authoritative-executor-core.test.ts",
+      "sha256": "2ca6c756f1403de7375e339524d707e96ea15e9143a3db4b72109d7505aa6cc2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-authoritative-executor-core.ts",
+      "sha256": "a28ae8b2cb1145db1ecaa4464910c16b2766bc0dffec6d863f4496e97e289728",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-authoritative-executor.ts",
+      "sha256": "e4aeb39c73988b9b1123a503e23f6cf42a21e0d7ac9a3308fa47d329743ff267",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-copy-executor-core.test.ts",
+      "sha256": "7ca23b82a4f98820398fec187c80a90dd74e0823e65f40d5358320e7aa62fc2e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-copy-executor-core.ts",
+      "sha256": "0ad5796554605b43bc44ceec15a61324c0421a480a4594d225f3b6c0c44b4b82",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-copy-executor.ts",
+      "sha256": "adf1525cfc6a6eae4e36ae86d75d654ad51b9935e495c0c415b3ef9108a7058c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-pointer-executor-core.test.ts",
+      "sha256": "523db982512ba09cb2d78d41dad63d81489f52e51260be262d6725f6ed912a7f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-pointer-executor-core.ts",
+      "sha256": "9675b502697e82e8c24494adf110c7828ce6ca7152963c14a9fe83479c805ea9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-pointer-executor.ts",
+      "sha256": "36db7f75b7d0b8938ee25297b5db04fcd62d3a12ce47c63587f5d74601e7ae86",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-written-executor-core.test.ts",
+      "sha256": "19d8b5a4078d2518f0926e742cf0b379e18eb9a257547dd29ca1608bdbaaf6f7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-written-executor-core.ts",
+      "sha256": "13791d8c89403dc152cb7231b400da97e73bc75fc13d421f182bef71c9ebfb9d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/canonical-vault-primary-written-executor.ts",
+      "sha256": "004226c381cabac730beedcf399b70441ae1c03ee84adb66ba75b5369321eb91",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/finalized-cleanup-metadata-retention-policy.test.ts",
+      "sha256": "c93baf1cdb3b31ee23fa7eff0bf394143cf4cb0409208872fb31c7f8841eac3c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/finalized-cleanup-metadata-retention-policy.ts",
+      "sha256": "471fe3769f55c4135d54030a891a0f386a3367d66d7417eea84c5084563fcfe6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/isolated-testnet-build.test.ts",
+      "sha256": "0ef185a87d4e21f43d3bac22baffaaa197e8478c5275b94484477bc428fff3eb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/isolated-testnet-build.ts",
+      "sha256": "338dafcbc53f5f52cbf1bc9073046ec181c2b777fd8d321c1c55d2d9e5e89fab",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-activity-entries.test.ts",
+      "sha256": "2c0db45ce587afe410479071366c57ecddad1457bef93b2e71758f2d8ae1b808",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-activity-entries.ts",
+      "sha256": "613294a09c3b8230f255167183950c1313d582f15f68c6f69bb8e7e64619415b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-activity-entry-source-guard.test.ts",
+      "sha256": "b3af5ccf16b084863f0d572769fc73c2d2c49f1b7066ee2b64a2e976f952c3ce",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-biometric-key-store.test.ts",
+      "sha256": "cc8de1667b40a487f9d87372b8e05268bab6087883bec07d765acd780931b616",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-biometric-key-store.ts",
+      "sha256": "e02690f0e1a1f1cf95b18bef923f13161b59835857ad390d58a2d4e7966266fe",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-biometric-lifecycle-source-guard.test.ts",
+      "sha256": "f79f6fee66fdefb7e60ab6bf24ea267707e2a31b68532f2c402f065dbb78ba7f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-broadcast-receipt-coordinator.ts",
+      "sha256": "94aa0a573a8b3ac1a833ee0ca38585cea88a5a432df18852422215eb5cf93a05",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-direct-production-policy-parity.test.ts",
+      "sha256": "9aa1e086ae36cbeb314cf044b16e1b30665b4d52b7f05b182fe6ef6ba444a3ab",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-direct-production-policy.test.ts",
+      "sha256": "0afa7f96939f33058c8bce0c3075cfda45969d1e2a6adf8a4ac830f6f3c427c8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-direct-production-policy.ts",
+      "sha256": "5f974e1dba0b84bc698340c17343f54e7a9868dd3d9af89694fd2a5e2f3ca92a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-execution-coordinator.test.ts",
+      "sha256": "7f48d026d76d90c257a0f218f120ae116532fec9f2d833899bedc54fb0ead532",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-execution-coordinator.ts",
+      "sha256": "0a515d1401791c200f80e0be50124d2cf80d94eda149f83f7a2c5f26fb2cde75",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-fee-readiness.ts",
+      "sha256": "3c5c5e4d9472effcda7d21f10904c62fd03aa50af9e7f6a26399e2470380d976",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-local-signer-adapter.ts",
+      "sha256": "14fb079b0dc14f4d9cbccc495f84f90594c226c23b631f8266b50e469ff2e0ff",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-local-signing-adapter.ts",
+      "sha256": "b3c48231d4f4d8432b06df21d61dd523da22318453ed51bba408c7b4b4490c39",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-authorization-boundary.test.ts",
+      "sha256": "acb847c28c6eae84cb296b69085cab83449dd3ff3b745161623a88dae836829a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-authorization-boundary.ts",
+      "sha256": "91730c110b28d105c317a36dad4f647ac7382ba58a434ce39e2d9c79fca91773",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-authorization-revocation-core.ts",
+      "sha256": "7dd756542ce9a521ee5d9ff1f7422d9f38e06b2b33d570bdee512489d9187f6a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-migration-lifecycle-source-guard.test.ts",
+      "sha256": "3ca8983a4f31a356001714f35a53d28ceb962045de43fef90d6d651eda082cd5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-recovery-bridge.test.ts",
+      "sha256": "eddd0d96eea88839f52fcc7fca9639dc1d465da6fb2e5abd8c2bb3ce1409e93b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-recovery-diagnostics.test.ts",
+      "sha256": "038a834951efb3472ab2da4cd86514af42c9e98a38ff5843a9a8f2c7f167c022",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-recovery-diagnostics.ts",
+      "sha256": "5ea2d93e81c7872e05ef032fc23e011949ad2f70301639636bfcc7ef19aa1bb8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-send-bridge.test.ts",
+      "sha256": "5f89be8b499ba93a81585ce69c25ed1b380450f64ac86c5170c8ddf2ac15e9e4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-signer-derivation.test.ts",
+      "sha256": "8d22366b7e440da6c422aa749edfd6e75e8cfbdff767d03ea33a6c45c68135bc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-signer-derivation.ts",
+      "sha256": "9e7d8774ec09402eda3ca74991d0c5f42bd60075211d6a39b6987846cb3f0c9c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-signer-source-guard.test.ts",
+      "sha256": "e386f2ef75320e6a9d032244ff27713da027bfe8aa860ced3be7c2a91ee047c4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-signer.ts",
+      "sha256": "81778d74b2c38b20edae86e533435d4b46147e444129f90d10c6335cdef12566",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-swap.test.ts",
+      "sha256": "f8d18bf508bc7d8f031c24f8f5453a3ee1ca4ecae8d5d3444d521759d338b747",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-swap.ts",
+      "sha256": "420ab1617affecbf181284a92ea7688c7e75d4d6ff63661fdd86496b376768e5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-vault-migration.ts",
+      "sha256": "5f4d6adbba364956c15a6e3f916bcd32d8c4709980a13a8cc8f4276420ab466b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-native-vault-verification-source-guard.test.ts",
+      "sha256": "a5618e571d39493667937909e4b12c6ec807943cff405dda1d7dde9955149b80",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-nonce-reservation-core.test.ts",
+      "sha256": "82c54524310b16f69465304f8fd84460e094bae089a8087c83b6ae33732b4736",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-nonce-reservation-core.ts",
+      "sha256": "391665c464e194655df03a6bdfc5ccd1ed04c4961c67bd0b8fb980e6b7581669",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-onboarding-executor-source-guard.test.ts",
+      "sha256": "2dd2a94681c317dae4c1ca6c39fcb6a94a3cbdbc52f2d6c949a76193e7973861",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-onboarding-executor.ts",
+      "sha256": "b6633440ba83ecbbc259fef3b60bf12e597cc9658a96d5f88586e0c0a6f74efc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-onboarding-machine.test.ts",
+      "sha256": "73859615ace0ce1bdb76ab1bb7db9f0df962ec52f0ceda8063abba4a9a00a62e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-onboarding-machine.ts",
+      "sha256": "b2c010506136292c4a2dcbfb865dcf0c0a6930e85a20d1fbafe135447fb8f250",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-onboarding-provider.tsx",
+      "sha256": "03c84775070f4d17c361dd5053f85914677d4ea6e702e1fa642b6166089ad155",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-onboarding-source-guard.test.ts",
+      "sha256": "5d238d03ce054f8f765b471446ec534c8917db5a665277ae326916386472c352",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-one-time-authorization.test.ts",
+      "sha256": "9ccfd640550a6d1ea982d6909a0b695e56a5f14c7fcfc1e1d96c2229fca81415",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-one-time-authorization.ts",
+      "sha256": "f37648d7d94900fac597f5e56156128cb8ec00005409c4950497b33c3898de13",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-pin-retry-store.ts",
+      "sha256": "efade3553610413a6f82e3bdcaf59bb45ec6b91296f093e54cf4120e7cc1099d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-pre-sign-revalidation.test.ts",
+      "sha256": "b7155c1fc1bdf44cb9bf3d6bb44592b6de0da971fd5e8b8880687791e1dc7be6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-pre-sign-revalidation.ts",
+      "sha256": "2c5a867265192bdc877b50b716961ac12a302a6205f7d9809dc55687c65c314e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-preview-authorization-source-guard.test.ts",
+      "sha256": "f7a26a5ec61b931ff0c470c23ed68c484c3ead58bde27ab5424ca6bd4c447968",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-production-coordinator.test.ts",
+      "sha256": "8d87c47ce2c03b8f160bfedb60403260c26d3aeea40e92ee6bd751d47edd6607",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-production-coordinator.ts",
+      "sha256": "a9224eb00b9dcd587dacec6e22911944cf202a1ec7c2b9729501e16d32c5a272",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-production-release-gate.test.ts",
+      "sha256": "706de8d4882373e02b4ae8a95d0fbd4f6ef3021fc2a7bc3ba6cac845af1b1dc2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-production-release-gate.ts",
+      "sha256": "52e6b9969ea138242972aeea7a90b0ec999c5446c379245f81acae0ed53275a9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-production-signing-foundation.test.ts",
+      "sha256": "7184357abc4eb53e89555d249fa2aa2b4e5fd7f41f621be83b937993e4456f71",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-readiness-policy.test.ts",
+      "sha256": "ec375ec90c18b7878b5b3ec65cce9b8bfbfe498cf08053d2bbb041f2f75fea3b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-readiness-policy.ts",
+      "sha256": "12dfa6f5dac891b64a71954c6e6fa7548670c6a945e45d3a02824532626e8399",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-readonly-activation-plan.test.ts",
+      "sha256": "2cdb4964f0daf68b5a907cafbd8e3713f995f5db9b66807b80756d73c249e85d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-readonly-activation-plan.ts",
+      "sha256": "d4e294410c1e47ec032df93bd16874e91a13af07f716f7ed06d0990d08ff16ee",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-receipt-presentation.test.ts",
+      "sha256": "c4e0c086fb028e5d55147e9cae9fffb9f256fa81c758e02a11a4eb021d90e70d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-receipt-presentation.ts",
+      "sha256": "91baa5dd9bba337b40dc710bba98473d27b76d0bcfdb1ff7c5f94396c499f294",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-recovery-secret-session-manager.ts",
+      "sha256": "f633fa396bdd764cdd4c1d8351bf6230ad81968c59da929efda8580b8e5ce674",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-recovery-session.ts",
+      "sha256": "6aa1268dd0691b09b887f49354affe5d81d7c022dc6bb10af833791c680bbeef",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-recovery-vault-create.ts",
+      "sha256": "c2e28a7060eef860d06d1745b2724abcc66cec204d4c8a07893629b5c9184d4e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-recovery-view-core.test.ts",
+      "sha256": "f8112d4b1c31d3b65a8602f0a9b6f4f6a010ecebb4a64a09c20868c821bd0bed",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-recovery-view-core.ts",
+      "sha256": "fc5128d7f6da8198440fb632cf022d7e4f54dddbdfc3a198b48e2e891d5163f3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-release-readiness.test.ts",
+      "sha256": "dc91d7f9a01af90125b6aaa6c2dd3d001d84a848801c11faf7979fde2e3cd5dc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-release-readiness.ts",
+      "sha256": "09b0fb89284f96a4bb3747a971ff25b0255b56a5b53a0a487b154c24ac384fac",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-release-security.test.ts",
+      "sha256": "2f1b9c90ee79864d8481ac9f980aa624b8f696d4e97e7eee0434d3be4c999bc1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-release-security.ts",
+      "sha256": "f1705f2b22ffcf726fa9a97b699fe23ad23525ddc86fb51d2d548aa67552ec59",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-release-source-guard.test.ts",
+      "sha256": "2b5fd9568c6db5f92358db8f341c603dd7e896ed0d8eff62ac16d36ee4f98cb3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-replacement-actions.test.ts",
+      "sha256": "a93eca2edb9ac6d8447f58aadf2174e14332ee2b317ca8414b7f90ef101ae89d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-replacement-actions.ts",
+      "sha256": "e592783fae551b41c80eafbff86e485e781f668b65c71c7a026601cdfe8a3853",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-replacement-bridge.test.ts",
+      "sha256": "d72772c30c24409a187309f0a78998e3ee0c5e71417b4bc59bf305be3e825d94",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-review-envelope.test.ts",
+      "sha256": "d491fb418cdd4ab7ddc773f8991187789014e8f6dbc2a4581a1878f3b4c23595",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-review-envelope.ts",
+      "sha256": "cbb63ee1c8a8c1a69ed1bff5c787410066262c71101788c691164d1a816ed8de",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-scoped-signer-core.ts",
+      "sha256": "72d0a2e959fa59008c5adb865b849dea3e46ec2bfeff2fc5d17a3d51ef8634a5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-secure-confirmation-source-guard.test.ts",
+      "sha256": "984ba712acdeaaae3d97b81e7377db458a35273a6954ab01f163f32ffc7153f1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-secure-confirmation.test.ts",
+      "sha256": "ecb60e23125e301534d03b9ef8d38271189b6a8623d4b540e288fa8a0f285f26",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-secure-confirmation.ts",
+      "sha256": "ebe8cb33a52a8cd3622dfa982658c4326fe06d4e94da199adebe697819d88a79",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-send-flow-provider.tsx",
+      "sha256": "cc2105ea844ac87e3666572d71ace274760471a993afb21b5948c4f46fa77553",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-send-flow-types.ts",
+      "sha256": "934aed6eaed3f20fe20a24e1c4929afeac0967f41e25d9e076eafda59d6d32cd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-send-review-source-guard.test.ts",
+      "sha256": "803f7dc1797588e7659de5dea6b9a1dfe8013881bc75d2399430f5e8926b5a64",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-send-sign-boundary.test.ts",
+      "sha256": "57e7c7e5542f845d2f94407c6fb50c76f21b05d6db66194aaf7e59de7112e3b2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-send-sign-boundary.ts",
+      "sha256": "aaa6557d390f1034aaba931e4a744a9987f1ba472f0df3139d72b5c405efdd8e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-send-sign-foundation.test.ts",
+      "sha256": "8b37c6103b9e448f0791ab9cc885b65bcb594dd94175fb5c4197e60514c86b61",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-send-sign-source-guard.test.ts",
+      "sha256": "4077e0d8d7efe9eb496678a122f4899d12204cae54331aac410c45e9058763ec",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-sender-binding.test.ts",
+      "sha256": "fe5d405823480e16356385251022d965ba7548c97823536695b6625cb7aa4204",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-sender-binding.ts",
+      "sha256": "12553ad0f2ade72f4503e9b4808e0dc17fac1ad745a063ba639265efbc4c16bf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-session-lock-provider.tsx",
+      "sha256": "f8f620bac25e2d7c93900ba5bd38298ae07f6ed18e870b41a66d7883a29b376d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-session-policy.test.ts",
+      "sha256": "f0743eaae47211f6a3b02af8cf2b9b1b7b0f28feed7a90502a2ecb6346afdda9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-session-policy.ts",
+      "sha256": "7772a3cc02f097fb61a641b107ad25a9b3dc4b147ca30724a9ced6c63f86c3f1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-signed-semantics-source-guard.test.ts",
+      "sha256": "23a4dab60007b48992fa93bca56c6b8abd48cc87775103dccaba2e09298216a7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-signing-broadcast-foundation.test.ts",
+      "sha256": "3adc5675b677e217ead6c3ebee9a9434349d09014c377a81c6954a383dbaa258",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-signing-executor-core.ts",
+      "sha256": "89ded336d56da10c31e2adcc4e3396b255e7dd9f2fc42cd32af2e3bd202bae82",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-support-report.test.ts",
+      "sha256": "1fe45581ea7d6a638a64661c909335cbe6bdeda870c8a138f82209a8c8f67db7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-support-report.ts",
+      "sha256": "17f3f8170ccdadabd380e147c2472bc41192e08421804889262c15d2be84615a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-supported-assets-policy.test.ts",
+      "sha256": "a0b3722ac8fc8f9297279ed2d445b180b64d9cb680f00f81c84b09b4a646e125",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-supported-assets-policy.ts",
+      "sha256": "5b984fc2b7cdd765d8430fd20ecf7df1aa2bbfef5feb160be6ecda6c6157c1d2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-swap-policy.ts",
+      "sha256": "e2a1e5cdfe8737f08a5f55fe18718703c26005cf09da6afbdce3ef4db09da2fd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-swap-ui-policy.ts",
+      "sha256": "21902489bec28e71d94b5de8a1c6132f4bd8363adf126837d7e32b4cea968e2d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-transaction-intent-policy.ts",
+      "sha256": "a03f618b464d6de31b31f0e9bd32e9e9a073b3a86a6123223dee71de57981a94",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-transaction-precision.test.ts",
+      "sha256": "6c2ad2e26359ec96dc56335f7729efc6348dbf6a7347ed0339eac4ffadc4b8f4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-transfer-history-policy.test.ts",
+      "sha256": "85629149fd44e75e4486d4a35820f13358a4980e2cdd34382d6646dda2f6ecae",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-transfer-history-policy.ts",
+      "sha256": "3b8d49349ca0f7fc8c79f7675384823ee59cb9dee9f6d506bb92be0802303673",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-transfer-refresh.test.ts",
+      "sha256": "8366ea6e2d1ebfb7a897b5f9e275011bc130670573a816a2d739078dd6eaae19",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-transfer-refresh.ts",
+      "sha256": "b4012e41ac25ffcf3541ad6b84a5c9cbbfc272e5bdf92651840a0ca0c43b90d6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-trusted-quote.test.ts",
+      "sha256": "34838c6fd7749156de99b563d84425278f9edb4b1768aa2d1a216f132468eda7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-trusted-quote.ts",
+      "sha256": "129cdca6a491b78a7407a230743c8a93921f85e82d9bd5e9dad1d9f191e0aa8d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-unlock-attempt.test.ts",
+      "sha256": "3ba94716adb862f84c014a67f44f3f52dcea8d58ca163b3d6e992ab1879598b7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-unlock-attempt.ts",
+      "sha256": "ebca29ad404f66ba07ab2795e9e5cc89890b90a5a9dabd4506256b253440d567",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-unlock-host-core.test.ts",
+      "sha256": "e7aedf37ed4f72039f7e2b72c20832ee5e9b5837de83b9369fe9e340d98e8542",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-unlock-host-core.ts",
+      "sha256": "9505864f56897eaf39e3cd90a7c3b226784f1fb7ce81023ed96d0012fd855984",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-unlock-host.ts",
+      "sha256": "a6b9de8bf13cf180715bfa7a591ceb133800ed596bcf4dcd5faba738039b5aae",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-unlock-source-guard.test.ts",
+      "sha256": "1524ff5ae7486c104ff430f443f47ef3bf19bf80d54e53774b2f552681801435",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-usdt-send.test.ts",
+      "sha256": "207284526fbec8b3f92a6ca3545ed7ad97ad6db59dfb3a7b1a09dfddccde95a8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-vault-biometric-workflow-source-guard.test.ts",
+      "sha256": "e5a587b1abb24d75c8e66ea330674b5da60592868adf5cc1a29cac0c46ca76e0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-vault-biometric-workflow.ts",
+      "sha256": "ea867074eae23313f2bfc52e4848fafe26cb910521385c32a8ecb2ef435f45f9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-vault-capability.test.ts",
+      "sha256": "e6236d9035c7cec919dbb6a45bcd32c96264797479864ae8207f742dc07febe8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-vault-capability.ts",
+      "sha256": "93b532227040ae4bae3a5bd7c18712c28dc33ee215e38ae740356a00f1536c4c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-vault-workflow.ts",
+      "sha256": "18bae3751ec62fae9a50e5345f35b8d2d16e5caefb2042e81b4a177904c4dc26",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-wallet-foundation.test.ts",
+      "sha256": "1865cdb5c661f3c320edb6a3f45e55a4512bfa50d6ece4ff4094f6acfe71a25b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/mainnet-wallet-foundation.ts",
+      "sha256": "549d3efd80fd3017635cfc5026e6e5b622894b2154f88d2fbf03345bcca020b6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/physical-identity-transition-fixture.ts",
+      "sha256": "9b5af4f9939096b6218b1538464c23b44395b958f4a93c0eba960ca6b95662a9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/pin-confirmed-signing-session-source-guard.test.ts",
+      "sha256": "c4500cc82481bb744ab8c68268b9494f9ad83475c5bcb1cfefedb4295a521844",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/pin-confirmed-signing-session.test.ts",
+      "sha256": "53531eec71d3f82389710e624e04f6d94a2b05834c561ef8d616452c526bd533",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/pin-confirmed-signing-session.ts",
+      "sha256": "68c9e8ad5697bfc1562cc079c7f5f538a1b879bb8e370b503bc032caf6147f94",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/pin-policy.test.ts",
+      "sha256": "d5520663f7b66768af4c88ab59eb49a8fe747773b137f54b128df6889dcd5f03",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/pin-policy.ts",
+      "sha256": "0be80150bfc9e7a835ebbcd01c224b03ffa30cde3f1a5b7e9445c6b8aefd1727",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/pin-retry-state.test.ts",
+      "sha256": "605dd77e3d4d234a7a2464b140660c783b2e14f9543c6a2f00ce657d4a3b2ee4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/pin-retry-state.ts",
+      "sha256": "7a540f7c8131887c5280edd08f3b45d04ad2c0da0986ea63c8f446d00dbf89ad",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/pin-retry-store.ts",
+      "sha256": "8af8a17d2f56ce73960940a61d5caeb88deac4c620c8b305394013c451f02719",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-address-derivation-core.test.ts",
+      "sha256": "d777b365edcd304d2deb744453ffea5b237ea2368086f8c4d12b10ca9f761fde",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-address-derivation-core.ts",
+      "sha256": "e1e81da0788a85d8ac5f8edc42b33d4e2cb1668c341f3df918424906340f42ce",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-address-derivation.test.ts",
+      "sha256": "c2692022a9e6c5ca35f1eddc927223404869ba0cec734c961636236951774cb5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-address-derivation.ts",
+      "sha256": "fd0d4f23c15e1b616048f3eac5bd60ebb3e244e69766efc109fde7d3c76c6236",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-confirmation-core.test.ts",
+      "sha256": "09645deb2a147121605534d7c3167bfc013c6a1981bca5c38b1bd655a5bf8e48",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-confirmation-core.ts",
+      "sha256": "708d834b913a4214636ceeb5970381f6b248b618fd06174925f8ef1448808759",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-confirmation.ts",
+      "sha256": "d30af5b70b55cafe9d99560abe50972c880619bd657fc86c7b72bb23cc7ba806",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-import-core.test.ts",
+      "sha256": "7f4f6b9b3370842202ae21c8317db5cc3a339e07f3eaf161230c12ddbfb80817",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-import-core.ts",
+      "sha256": "cc70d8fe6538cda43feafa94690a1440d6fbab0359070c10bfd5c69141d58a68",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-import.ts",
+      "sha256": "f3758984be1709426397b2e8cee5a5bc5fccb4e59900626d92621fd747c73a15",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-ownership-authenticator-core.test.ts",
+      "sha256": "ed32b31f5d3f33617dbe4919356e8348dee9425147f192d6c7439425c6a17ab8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-ownership-authenticator-core.ts",
+      "sha256": "7505bd22777ce55f8ed64d90924a44efbce149edf2e9c9e4fc1eac9464954584",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-ownership-authenticator.ts",
+      "sha256": "2e5bdd8dba5dbf774a41b0686d249496c4e324aa4df856fc1b5cd73080482511",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-phrase-generation-core.test.ts",
+      "sha256": "8e21a0505e0b15f855312dd01acabea09a48991ca1870e52ccf33e961c03f85c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-phrase-generation-core.ts",
+      "sha256": "e67299e151728407a024f89323918157e0456336389d78cf75d7ba9dd23035c1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-phrase-generation.ts",
+      "sha256": "ed7fa6e03412015f900bd3ea7de1f0b13a13af2ddf11baf108cfbdf13e1cdbb3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-phrase-import.ts",
+      "sha256": "e8b376aec3882fea8e09c59c906469594c411123546f0af9688cb215f393762c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-phrase-validation.test.ts",
+      "sha256": "add041488f95065359a3fa45c5b6216952fa9645f69cb309a9550cb039738c0b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-phrase-validation.ts",
+      "sha256": "6e15aaf4033ff5817c3c688343f880f68b8adb100edd416e0e185c3a9d5b2df8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-secret-session-manager.test.ts",
+      "sha256": "9f646b67b2b666d5b90deb1003f227bd6e86fddb2bc25f37218b4f522e5898ab",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-secret-session-manager.ts",
+      "sha256": "b1739cbe229899b888e21858002a28444c8f535568c10bf05451aa06e213b0ab",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-secret-session.test.ts",
+      "sha256": "f5491d96cda66bdc5c79d371ecafe5b559f7312dfe1e24350142d76f72a05c33",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-secret-session.ts",
+      "sha256": "cbc95b5f67976eb7c8aedd42df1306a3ad77aa25ec9de9f5d686add64bb1d7aa",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-session-start-core.test.ts",
+      "sha256": "25713c1838aa661f240d2b6803e490d957a01cfa9e4d1a0688030136d153ed55",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-session-start-core.ts",
+      "sha256": "4a5ce59b23cba7d2314512deff6122952b8aa12e85aec2929c0556c9f51c5d91",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-vault-payload-session.ts",
+      "sha256": "7bc1d3d6f3119e0c4e54c67a3230f7a54f5b0191a80c53f3125230fd765e9c21",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-vault-payload.test.ts",
+      "sha256": "2dc6919fa79de3a95e6189adfd785d59b719fe65be67433ce6cc7a065296e172",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-vault-payload.ts",
+      "sha256": "1a3e86d79641c51fc52edbc60a6dafc09e54b3136b3f8bd41b63f6cf9e8124ab",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-word-confirmation-core.test.ts",
+      "sha256": "6302c8ee4bf0ced76cc4fb7f331f21af23c029279efaabb99bbbb7e855c005cd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/recovery-word-confirmation-core.ts",
+      "sha256": "134faa4e606d0630c7914bd5611c2197cb1a4fd8055b8dcaca55b7f9f934d839",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-authorization.ts",
+      "sha256": "5b5b6b9fe5841fd6763dc6ee54b1693eea7f854db69c57ad87cf2f3ffe68cb0b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-controller-core.test.ts",
+      "sha256": "ef17c0d3696b4cd39e1bf369df2385fa1ab1c2a3989b63ce95075067a7c58da6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-controller-core.ts",
+      "sha256": "9ad7a9f9ba2ae66067b2c4bee0e691aba394b98f13ed8b826e165a869cd1dbee",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-controller.ts",
+      "sha256": "873c8ec0fd57351b8895ecd0b82c1c29c3139fbb975eb628e58472c99f2c16f7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-executor-core.test.ts",
+      "sha256": "27bf0509f01cfbaa2ad9b9b916c9ee0b5595cc5be24b37a2fe63f79596604169",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-executor-core.ts",
+      "sha256": "019a7fe0dc741c7b21d934c66117d36afafafad0b174168df18a39c7fb000c80",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-executor.ts",
+      "sha256": "57476fce64a394ab6347be6666ff28382e903cc32d4396e1cda44bd22d097a01",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-foundation.test.ts",
+      "sha256": "26b4f2e4133796671c52c6d14940ea0ded0e634d961979be4ed5cb4b61acd5c6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-journal-core.ts",
+      "sha256": "424131bbe7bc9e48a0473da8478f9400ea56d39156818025c6386c32b1a56482",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-journal-store.test.ts",
+      "sha256": "84a3f900be7905232f41bc169497f2c4c14780b580d0db24e8ab5016cb249920",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-journal-store.ts",
+      "sha256": "4c21200272d41747dfc7c8146eb47a5c30cbcc60e4739837f0c8eeb3e208eea0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-policy.ts",
+      "sha256": "eb6237c764a7768cf3736577b17693c2233e8cfad8d10dcf9923a5ac07686b5e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-pre-deletion-audit-core.test.ts",
+      "sha256": "de071f17ed8e009602e0ab217eb49a239c72ef928b595d20262f879658c1441b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-pre-deletion-audit-core.ts",
+      "sha256": "66aa000689becbdbf4c6238bcc6029fc2b968b3ea954f62c8e383f2deed5bf1c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-pre-deletion-audit.ts",
+      "sha256": "7f0ac40341af9217153ad3bcfddc6e9526c0ac7985e5f33edb072ca47ad42e00",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-recovery-core.test.ts",
+      "sha256": "ebf6b803358297cf4afc4ba939d898974e0e6b2ae7ed2e3ae97ef2ef0f0cdf3e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-recovery-core.ts",
+      "sha256": "3ffac3c0b62a5d3a63eb62eb050c6157879231f73e9c1e04fa94cc605bd8a517",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-recovery.ts",
+      "sha256": "8daf8b29f4d525af503e2a27d34b79e15733ed1d8ae88581dc3c4a49025c1523",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-snapshot.ts",
+      "sha256": "7d72135ffd005956e88a9abdeb7f449c5821bfd41278748f003087ccf6edf9f8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-startup-lifecycle-core.test.ts",
+      "sha256": "9c65caf0e0f8fbb77c10dbb2727f98a91160329ea115fee1a5bb15622ac52b65",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/retired-primary-cleanup-startup-lifecycle-core.ts",
+      "sha256": "7d8251234be8c20e2f84649fe9a22864452313a7d015561c45545c5ac17172e7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/secret-leak-guard.test.ts",
+      "sha256": "b9dcdd1281b0062043d2d3138598f3ca5b7eb18aa890eb3c66ff3e9e28e2ec4a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/secret-memory.test.ts",
+      "sha256": "3bc2096bbe8ce26a9938022d5e5c70444b10866e591d00f6ad22379c73aa786d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/secret-memory.ts",
+      "sha256": "21a687c961440237eaf7cca1c2cae49c3ebe9f8c0252494516322671a01e1770",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/secure-random.test.ts",
+      "sha256": "1528c63937a453c9f3b10f1d9d1c6f367d70c58a7b6549a636a006839413830c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/secure-random.ts",
+      "sha256": "59ce80f0fadab771e82b8621974c1dd1244e359df427257ae9e895a8f0ecb4f9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/session-lock-provider.tsx",
+      "sha256": "77a970f82f9a872b055afaa501f7c3d6df42ca483a21880b249fc1bc00be6bcf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/session-lock.test.ts",
+      "sha256": "3943cfe4d64a1330cc657c7660ac565834aac952efb6ff3a74e79b3b47fa92c1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/session-lock.ts",
+      "sha256": "58ac785fb1ce76bfa3b8232f996a2d6685e80129190754ee8dc68f65f955332d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/signing-feature-gate.test.ts",
+      "sha256": "17d5a25892c4f417832c145f04d2897822a629844f42605fb22ad933a35ddc51",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/signing-feature-gate.ts",
+      "sha256": "d0297936faa4fe3132b3fc85651051b7e87b090b1d7a048d562b64422eb3291c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-recovery-backup-generation-core.test.ts",
+      "sha256": "5334e30341d5a4546a2ab9ada94b02c58b8156d5c221f7f2354941c763d814a3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-recovery-backup-generation-core.ts",
+      "sha256": "dbc191e46fc070da7c5884a50bef1a7dca43c4741259a2f4f6dcd1b6526d0a1b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-recovery-import-preflight-core.test.ts",
+      "sha256": "46674d12a88fda4a5d936aaf1f9996893f19f09e043d84161d4883d90e44aa93",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-recovery-import-preflight-core.ts",
+      "sha256": "ebccb9bc8356bb8240e502f12f56e8534e161cf66cb8deb460d9fd1350fac94a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-broadcast-authorization-source-guard.test.ts",
+      "sha256": "7c0bf9568a731adc9d77cc5b3e3bd6534c5cde8300515aaa742e74ff0945a6f6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-broadcast-authorization.test.ts",
+      "sha256": "1d37604757c3ddf6b738cebf0243c51abda717cdf4b04a00a774b19d24762ed3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-broadcast-authorization.ts",
+      "sha256": "36c517d17c6b2ca29e5206150270cd8246e3bd924ef6ff2f4cacf75fc163c6e9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-execution-harness-source-guard.test.ts",
+      "sha256": "2eb5effbe2955c37ab2ca3a39f9b09c25a90d5795ee3994338b7786099ee1745",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-execution-harness.test.ts",
+      "sha256": "0e0f0adcd492af805a6068cc3783660150ae2eb800e438ae4bf4322bc085dbe0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-execution-harness.ts",
+      "sha256": "fd462ab1f82dc58605f3879ea5218d2787bb9d1545596f817dcb3dfc5c998b88",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-signature-foundation-source-guard.test.ts",
+      "sha256": "45d03f1601ee8f11fedbf2fe86382c3f2feb492b30d1adde861393a26ad6f3a0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-signature-foundation.test.ts",
+      "sha256": "a6f9986347914ac2e7c9c2d000700a09b7717c4b0302ba5bfa2c7da6eb5124f0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-signature-foundation.ts",
+      "sha256": "a4256b9561dc5a967706e23d70aa4bfb248a60a639d5fd9c87cbcb3c983c138e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-signer-adapter-source-guard.test.ts",
+      "sha256": "c5e3571abd0a1b31b7c8f132f911ab265ee181bd8bbd14db32b3a088bd58637b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-signer-adapter.test.ts",
+      "sha256": "49e4f4e61fe0c036cbe6a169135b55d91be0ba30c99bb95e516058f207eea661",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-signer-adapter.ts",
+      "sha256": "32cf6621eb76d3e9e4b15e1c7b88022e61421f50420e9a32862181eeafe2b660",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-transfer-builder-source-guard.test.ts",
+      "sha256": "8bf589d36697b78c3933abcfdca498ab8e6806ff49c63693cfbe19a65371dff0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-transfer-builder.test.ts",
+      "sha256": "cfbeac20fe86957c38970674519196a2c9d4bf914d848f01b7ccb0c65f98f2c3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-testnet-transfer-builder.ts",
+      "sha256": "930389d962f9245b496c6f1491480ecc02e3d72166652a791214ecebfe542c42",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-vault-replacement-authentication-core.test.ts",
+      "sha256": "ee49bb7f6b4b909bd809c538eae7a6f10e77f503614296810ca94c7332a994b0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-vault-replacement-authentication-core.ts",
+      "sha256": "bbe24b80de257f403f6077ce07602e34f8f0dc77641291c66b5299cb7a216dad",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-vault-replacement-authentication.ts",
+      "sha256": "99ae0ca2cfa57e75bbdfb49390c7f4c3f20c470d08fd7081f7b72de34bf3a186",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-vault-replacement-eligibility.test.ts",
+      "sha256": "d07841cef7190e15c4399fe9f3492901a14704036394d5974106875f79e1fb24",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-vault-replacement-eligibility.ts",
+      "sha256": "12fd324ef81b34ee778cf7c09412f69835aebf390405a1b122a2377d75c3a2fd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-vault-replacement-machine.test.ts",
+      "sha256": "9369e2f024646ab66f3db41324913912ff88edbd57d8bd62c958664ea9c0a214",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-vault-replacement-machine.ts",
+      "sha256": "e0963d2d9eb6f79d9917abfc5b6ded53f2a6816f7a63397f8e8e7e611c7d7001",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/synthetic-vault-replacement-stage.ts",
+      "sha256": "99eb7915cc7df6d9fdcf9a22227be77d5bcf9d843e1e804f17ba5f9da747ee08",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-broadcast-gate-source-guard.test.ts",
+      "sha256": "bd6aa740390cd330a743dc36eb1a88c3094a8754c87904fb6cac40140f672dda",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-broadcast-gate.test.ts",
+      "sha256": "e4847a6651797b1cef84d9209e023c38cfb9a96b3f73ac63dc998ecc267b50c8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-broadcast-gate.ts",
+      "sha256": "399ce0e112856837340e90228d3fb817cf95aef4695665b5b8a118567c4f2004",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-broadcast-preflight-source-guard.test.ts",
+      "sha256": "bdf3542f8ce2843504970ed54d2e86a6f46180a84396fb33eb9006792af7e03a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-broadcast-preflight.test.ts",
+      "sha256": "af171d2eb96d1ca34b491477ceaabe51f6857a4018fe3314019ff6bb8a49cb28",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-broadcast-preflight.ts",
+      "sha256": "3a78171396282b7f74b50bbdc382ffd63c3d62490c73a223a07d2c00a443e6c7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-execution-coordinator-source-guard.test.ts",
+      "sha256": "c14e6ee8844824c064dfac78a6f7fb352ec410d0646510af73e01bf6829d9800",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-execution-coordinator.test.ts",
+      "sha256": "479e9c93c4d5279b3bf2aea315aa097c9994a9ac00b61284ec744cc421c97b29",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-execution-coordinator.ts",
+      "sha256": "2aec3276c25c920625e77de1175d50dfcd5e95a4dd51fdff1cbac41cbd577c41",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-fee-readiness-source-guard.test.ts",
+      "sha256": "25b0558f528d33e75e4b0b936cd52f86be7e22167fe68c93cdbcaf5cf66efd4a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-fee-readiness.test.ts",
+      "sha256": "d170e4bafbf8f51a64ae6b89862366b56ade0674915712d442400378e4550824",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-fee-readiness.ts",
+      "sha256": "47da241674b12797bf155af398f3081d1c216590b4b05eb6ed83341159662607",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-local-signer-adapter.ts",
+      "sha256": "f8437fedb56e6026c33195037e8e1f18029385143608cce24f54bec844c68377",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-native-signer-derivation.test.ts",
+      "sha256": "4f4eb24453a456dc16c575eb2bf091decd6c53d5bed512312b0bd713dd8a35d6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-native-signer-derivation.ts",
+      "sha256": "2777fa75adf64c3dfdfb20da0a7bb34bc945e58af5b9b07bf33d4caa0f7cc674",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-native-signing-operation-core.ts",
+      "sha256": "044328437ab443bdd8a06a99fb237ff821afb973ea31e5e3b25edd6d7fb4500b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-native-signing-operation.test.ts",
+      "sha256": "58bff9d97a9fe6b4495d046d720b45fe3ea23ed6b8e7172de376c2bc0fa3e3ea",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-native-signing-operation.ts",
+      "sha256": "548d505101018b1a72154cfd531030a13bede648fb2338512f9e485d4e580da2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-scoped-signer-core-source-guard.test.ts",
+      "sha256": "bd6ad191522bbe79296d6c30aa05b897de250f5e9bc2e877cef7f04f09ed101b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-scoped-signer-core.test.ts",
+      "sha256": "d2c9a441535ca1157d1679704cb5f5f067aa0131be9652d1c2d9033dae95becf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-scoped-signer-core.ts",
+      "sha256": "14b3691daf2a309ecc82ddc1460e3a1c8384c374d1d48a5f0b4bfa3538d85a75",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-authorization.test.ts",
+      "sha256": "91ad874bb319da1913ce4467e3dcff427b531e30604d91770b97bebe98f2d365",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-authorization.ts",
+      "sha256": "7caebcf860a927e968826406b8b196cead847b4345880a2daed7a3429e9d5ba4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-controller-source-guard.test.ts",
+      "sha256": "2d9121ff7c1bdc543bdfcac9a4a0d3d6f32969ce03daefe909ce2d602072dec6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-controller.test.ts",
+      "sha256": "00110da33c185f025a208fba3720bde45fdd86710264dcd082f5d064925a6816",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-controller.ts",
+      "sha256": "fb293ed334fe0c6cd7ec4c1ace88feb9ac1efe30684ba35d7c7c999fd2398b6e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-flow-provider.tsx",
+      "sha256": "483593cea3f05c0ddbc5de2183281991d3305f19a2158982169b1fb25e27296f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-flow-state-source-guard.test.ts",
+      "sha256": "c16169ea69524c726b3bd9f702ee71763798f6bc7c904b92c0f24d7dea162be3",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-flow-state.test.ts",
+      "sha256": "450ace54e658f8d54578df6d373e0ecdc84cfc50ddf7db090802aa81ce1efffd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-flow-state.ts",
+      "sha256": "4db107148d7b90bbc28c9fb187c9002d8e6081a761b5d8f931d93c391b6f1954",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-foundation-source-guard.test.ts",
+      "sha256": "d91ce10eff14fc53c06338b15769a1e3eb1980121d1f6f96ca55ef6239df93f7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-pin-confirmation-core.test.ts",
+      "sha256": "79e22c08ae0b3ed6bc5b2a3e79a6e2fbd427a4489b397ba23cfe8b6a12d7a104",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-pin-confirmation-core.ts",
+      "sha256": "4230c2c379177ea33a3ec34955d35ebf98825ece298e33daca9347fe3133cc3f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-pin-confirmation-source-guard.test.ts",
+      "sha256": "6d2842a214a131316f9dcb7e34d86b39e5aad088b72c1fb405cdc0af3cfe142c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-send-pin-confirmation.ts",
+      "sha256": "926c371d30025d6cc5af9c584512fff0ff88d64e6ce93a1cd6e05a3c13301867",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signed-payload-lifecycle-source-guard.test.ts",
+      "sha256": "d4cf2f33a7950c59011a648f79cf2ddded855921ddffdeef4c88e70ec87b220c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signed-payload-lifecycle.test.ts",
+      "sha256": "27c2b314d1e695de58d3e0f16ee565295fcfd16784e768c651e6472f40e47685",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signed-payload-lifecycle.ts",
+      "sha256": "e7f36a44d9f8ee8ab9055d62ac6701946ef0d644e0bc9d73c3d1a6f04fbc059b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-account-boundary-core.test.ts",
+      "sha256": "84db9da99e8b0085fa9ec701a9654c02b7f485f1d347b2b7724aafdc3651811c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-account-boundary-core.ts",
+      "sha256": "15979c710a599d8562bc476b61cb2f97d13ae288b8435b45aa7290273019fd41",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-account-boundary-source-guard.test.ts",
+      "sha256": "be15a94f2242f17ba7a8aba5ae2c48ff467c82b864a03205e79e9138f498779c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-envelope-source-guard.test.ts",
+      "sha256": "c00673f55b58fc5cde0c9eca3ef6033641b8a9971ca87b7d24962eeae61a9dc6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-envelope.test.ts",
+      "sha256": "4190d8b5f53cf6bfc001fdb212b1c1c4c7c4d8b81d89b5e1b780315b0b40f10a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-envelope.ts",
+      "sha256": "0b7be2ed9dbb2914a32c91a100b726df456549821894c81cf69af51e9f16fa22",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-executor-core-source-guard.test.ts",
+      "sha256": "9ae83f91d484a0890cd48b85c12f4f584e2891866ba2756c3a972417469e5a63",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-executor-core.test.ts",
+      "sha256": "14c14eb3a58643ce34f3c266775086cf4fbd86a82e1fde068cf935c4967af8db",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-executor-core.ts",
+      "sha256": "8b7abcede32bdfa2466638f6a35f55b831913fd8b43f51210a651b2034a453a2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-identity-boundary-source-guard.test.ts",
+      "sha256": "dbe738df222ee2ae14b409117fd67a3aba25a396e991204e6a5926fc8f9c67e7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-identity-boundary.test.ts",
+      "sha256": "aaa6bdea920e53bb506a4a52c2d28832a66381f16a312eab9989b04ff8ff6876",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-signing-identity-boundary.ts",
+      "sha256": "a0be2d814aa4cf8cb3a304fbab60264b1eb65bcc9f50e8e0b03cc86ce6294d2e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-transaction-status-source-guard.test.ts",
+      "sha256": "f2ef80bfeb58d8a84eaa724f36963897f5e53e2d5446d7d80f1b6143d1212337",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-transaction-status.test.ts",
+      "sha256": "6b1c1e0a87e03f8f5f3b7c8ea732598bb2d4e2cb1057ae19be6bedafdd6f12c8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-transaction-status.ts",
+      "sha256": "30f9ee4c78b558cfbbe1b2820aaef8c0fa6b5e669d44270d2565f5848719fb78",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-transfer-builder.test.ts",
+      "sha256": "951fc3503c90923684740404db575c3c3fa22753e3285146e60916220b347fbb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-transfer-builder.ts",
+      "sha256": "cf8b00a13ee0d2211bb5b66c2a02e7e2a72a27ff9c0087036bc2a47cd7e277e6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-vault-namespace-migration-core.test.ts",
+      "sha256": "f24f51bc46cdfd747426a905b7ff54067e974807fb61eee3aca85f9005c21a84",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-vault-namespace-migration-core.ts",
+      "sha256": "9d1a5deee3e811c6ce5418e5706e52ac7ba8f5f6867c8345ffb0a085c76d5fed",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-vault-namespace-migration-executor.test.ts",
+      "sha256": "522f2c8032a61c5a4def40556230f13a07c68281924a39541c954ec43eb14c6d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/testnet-vault-namespace-migration-executor.ts",
+      "sha256": "0b3b6386d66297de1388548243ebd51b73f88f3198a6fab17e0c5718b8b158c5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/transaction-intent-policy.test.ts",
+      "sha256": "978b1f2a3dbd98da808d07121587bca62b9f879f08141002b8c6627ea0659984",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/transaction-intent-policy.ts",
+      "sha256": "f860ac8565f071b2064cba8fd95675f0a242513d77ed522db52292ff64efb2bf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/transaction-review-source-guard.test.ts",
+      "sha256": "8725561c41c6e83159402f9511735f2aa68c50e720dc88e05f2a57fb20134842",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/use-sensitive-screen-protection.ts",
+      "sha256": "40a04757e2b2c3c00956cf9f7e4ba1e0c0d7085cd8ab1e6741c44943add0b7e9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-identity-snapshot.test.ts",
+      "sha256": "586f02e6f644aa862773b49c89fccca81ce5a8b0203953bb0750cc567704afdf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-identity-snapshot.ts",
+      "sha256": "c1d7d0228f0f704454bc089da8ccf941f78e866e1ae5bcd424d7bfd5796b1b69",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-resolver-core.test.ts",
+      "sha256": "5b24aab9ada27840bff93d71913ffa801535b43ab9b580c951b1022ba744b8ca",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-resolver-core.ts",
+      "sha256": "3820a99e97094cd1ba1bc4f70b1d76a75332941a4faa36390a9f8e24885ee47e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-resolver.test.ts",
+      "sha256": "d7058d51c24150ae587dda05362f44422894e509bc1bc84099ed0810b6b78c05",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-resolver.ts",
+      "sha256": "07cb720e63a651827c7e787585ee9a27d39ba00242b7fb5e40b9cdf32f42f4ee",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-slot-core.test.ts",
+      "sha256": "e19ef4c2a4296a63154576210b74bc71ad64ecd34d7e20af332dc8a2b7eeae6d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-slot-core.ts",
+      "sha256": "7bd3d837aaba6727da59dae9cb639cc740fb3e5c949db931193effa1b04a2daf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-slot-store.test.ts",
+      "sha256": "c2e7e5c275576218ca34c2c62580f9a1b6cc2ce3ff4eaecc0e5ee8c8453ed41d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-active-slot-store.ts",
+      "sha256": "aa63284f716cbd7a8e32ce7a41386c901e537c4eb4ab52efc494b7ab0b039a0e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-biometric-slot-core.test.ts",
+      "sha256": "2045a35a49fc9a92eb546071f65ec076448c7d72b5ff91e3a6a68339290c8ddc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-biometric-slot-core.ts",
+      "sha256": "5de15ab8a78ce2a50e41266bdd0c0a8cec94dc392b223376e216351e012f843d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-biometric-workflow.ts",
+      "sha256": "58bf78190984522c08e385b8fbc72d31035969eb72b9f70a56cac2c11ddc23db",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-crypto.test.ts",
+      "sha256": "95bdd797508d509645c25587e1cb41e259398af03407d39703bfd99f74126367",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-crypto.ts",
+      "sha256": "aac7e44772fe49642352dde385e17cb3b9ddc10a1d8918108420df8f1661ee18",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-envelope-v3-core.test.ts",
+      "sha256": "b6460a1506e8df9690c6e9a1b6b48e42c8b812732fbe73d96d06e94565e45a76",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-envelope-v3-core.ts",
+      "sha256": "c78bc032f121bc583943edb3e9ccdca13084db39440b603ca980f1b8263f1baf",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-envelope-v3.test.ts",
+      "sha256": "8ec137904e75cdcdbcafc2a8a0de15057088aaff475b61fc0acd689be566a185",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-envelope-v3.ts",
+      "sha256": "1ec20044ee0113f7e2c71f15c3e0e6370d35c3d9d0cd53bd5e679d9daad72dc9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-enrollment-core.test.ts",
+      "sha256": "fbcb31512682b194c31c492dfd9c7fffb579017a1c288071d3d0d55616ac213b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-enrollment-core.ts",
+      "sha256": "e9fdcf7a5e7458edad594fbf70c823e5fe085b56dd514df3b33d582b5ae36fb2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-integrity-core.test.ts",
+      "sha256": "6723892d8b89ec3d6171ef6e9f33256739d4b186e7e4cf8840858aae5513e54b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-integrity-core.ts",
+      "sha256": "d38a6727b96a6831f13e40d8414603c701cf553e050cd899dfc036671c6b7e35",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-integrity-provider.tsx",
+      "sha256": "a54d4d019aeb8099b35bf024b8b20591ccaf0eb981693eece44341ef30a739f7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-integrity.ts",
+      "sha256": "4c88f85e3949c79117aa805032c49224be06c46eae6fd7d8a55e10ef0515747d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-migration-controller-core.test.ts",
+      "sha256": "3679427b7d2218464fe78bf4c22a7df2ef010da520412ab0fffdcfa16f986b94",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-migration-controller-core.ts",
+      "sha256": "f7115bb911a6889906cd3e45e9871987e38c034d50895842a5bfc8609dfb7e35",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-migration-controller.ts",
+      "sha256": "fee1b33aa1e1f4e48a121f51f962b9d09f6c7973052642a1b711c001b00d01ae",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-migration-executor-core.test.ts",
+      "sha256": "2eb130ac2ecaca6080874a04459bb78e85ee5d1660eef3d73ae4e2a8c2d21e6b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-migration-executor-core.ts",
+      "sha256": "e88d870799f686861a2d445b5a9bb69397b0ed1b9dd75687f959c1bb86383a8c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-migration-executor.ts",
+      "sha256": "e6b8c459e6585e1677263184c71a3b5b74acfd8007fa242389f2ea00e50884db",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-migration-policy.test.ts",
+      "sha256": "cb82054e86202b176a1fca09990209ce44c16e0d6e1eebdb7ab7995789facf99",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-identity-migration-policy.ts",
+      "sha256": "cf3215a76aa351b6ef80e9f09a248e3d5f76d14d21b7f93c5bac5de65dd95334",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-network-migration-plan.test.ts",
+      "sha256": "3816bc14dd521fc1d64c88fe21bedee2649288e1a4db7f2babca6705199a0c31",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-network-migration-plan.ts",
+      "sha256": "0a1746f1f851b9ebe2bd4ce8b97a798dfbbbd9161f78167380ebea3d6de2f5de",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-network-namespace.test.ts",
+      "sha256": "f2f466bce77aaf1c398208dbebf8accc55943e909d66c4c08259469813e25c70",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-network-namespace.ts",
+      "sha256": "79363cedc0e2efc4926bc9dcead9f1eed9609e49397d5e577f2d419ca982196d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-journal-core.test.ts",
+      "sha256": "0ddc5d7dadccdbce03d02080c25aeb315d4c4684d62b8cfd414b52fc72e4a0a5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-journal-core.ts",
+      "sha256": "ad4289592d5925089276d9e14133c6c4e1aa0330316475b36295b2cc8f1f0dda",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-journal-store.test.ts",
+      "sha256": "0f1c088ba08d8f4017bbdf72e100959f68accc27d6311a41dfa7e3a993c3bbb9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-journal-store.ts",
+      "sha256": "9fe4159470b1173d11ea5f3920fd0a012b1d779cf2d73634b922de8cbd63c94f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-policy.test.ts",
+      "sha256": "51345c34730993c0e232f53e48a0dca775d5fbe17d5528aa1806bc914f2efcac",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-policy.ts",
+      "sha256": "7345e732c981a9c9c4edd383da59fc6ee603562e6faa3801e75b5cbc52f35cf7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-promotion-executor-core.test.ts",
+      "sha256": "f8e5f3e5b208528d61c4a39b5389969e0fb7584f5ed10230fd9719e1ed49d8b1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-promotion-executor-core.ts",
+      "sha256": "df900024c32b69f6aee1da209edd54aa9b97962d37c9a0b95870be5582aa188c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-promotion-executor.ts",
+      "sha256": "35ff1f019501beb6614899a70d22f1b31fc914390a08a04559d0cec8c58777fc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-promotion-policy.test.ts",
+      "sha256": "986220dee8f5571e09a00cbb4f7444cabcbfc43004c4a25e368667aa29844628",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-promotion-policy.ts",
+      "sha256": "1694a3d087b1f922210516815fb85379651f65d57f651af7a3e2b9939e87db0c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-promotion-recovery-core.test.ts",
+      "sha256": "13fa97e65086108895743162e818f8c838cd212fdfd7dafdf40f2c8798b996a0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-promotion-recovery-core.ts",
+      "sha256": "02f992b826237b9e8b793151c8cf5dc6244a9c576edb7c47a8282ef343b8cc47",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-promotion-recovery.ts",
+      "sha256": "bd9ae69ac8140ab57653c40824d50e90db14e9098ae6d41d71d04ff2a3e42eb7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-recovery-gate-core.test.ts",
+      "sha256": "cfd08fa42ec0090ce25db36f6963471d79df1a9a3d195ed355fb63e3695b6904",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-recovery-gate-core.ts",
+      "sha256": "afb98e56d934d1a78aaa48f5fc148d4dbac4c5c218983eeeb170d52b646e4392",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-recovery-provider.tsx",
+      "sha256": "07198d47e3320b9f4c394a2f0abd7fcb4707a3ce7520f61f3bb78de8fff57ecc",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-recovery.ts",
+      "sha256": "d72cccc19d644c2c40a54f9c5e76095b8a8c9ec612c4783bbe71f14cd246e1a2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-resume-controller-core.test.ts",
+      "sha256": "8d41af390910f8ebb17f8aae4b7e669040b260fb61693640b0cbc9ab320c0c38",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-resume-controller-core.ts",
+      "sha256": "460dee55e0c82ac6ec2ec95ddfee8e154e30bc03c0aa51b349e14cf5d3097426",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-resume-controller.ts",
+      "sha256": "a4dab6fc211167482a56fd502a882d97533c6cad3aca2b0f6b813886b073b593",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-resume-policy.test.ts",
+      "sha256": "b25dfb36d2d210f93cf8eb21f832fd9a6bfe776a5be8b6641ecad7952cfb21c1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-resume-policy.ts",
+      "sha256": "40f74009fe2ad495c5686c2b384e0aede04a9c6348c3fdaeb68effb671721103",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-stage-core.test.ts",
+      "sha256": "3035e0739fded84eac6471030fe58f3b5e5f44bc2b3f0158ea0924d2ef350a29",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-stage-core.ts",
+      "sha256": "2c3f9886e50caeb5c0ad51e6864bf7072310333c7cf2ddc8ebb53eacf506f4c2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-startup-lifecycle-core.test.ts",
+      "sha256": "761a7e368f18e0061dbe93f48a83a0b6b6666382fe03f5bd6a7658611145c57e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-startup-lifecycle-core.ts",
+      "sha256": "b81571e9b6fc4fff3c9397557888c9f7796b6452e01d237219b18898c144ae81",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-replacement-startup-lifecycle.ts",
+      "sha256": "59cf4748b73f0a2a9387dc729c654ffb4bdc90390e4b53669992079224339c9d",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-store.test.ts",
+      "sha256": "94f025b7e387bddfe241270e1ee440d059c32a1c1fd71a89c30fd3cbee4664a7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-store.ts",
+      "sha256": "b2775919e9e814384f330848b3df770a2f9b09a64ef4c294b9c87837273a861c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-unlock-gate.test.ts",
+      "sha256": "468031ecbb46a511ad28919da48d3f60cc0980a60b495826f847dfcc96053f30",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-unlock-gate.ts",
+      "sha256": "4e0b5b57bb32de8e24424373b773b2a01036e65947b1e481d9897384eadccbb7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-v3-atomic-create-core.test.ts",
+      "sha256": "123443ff6a58860e8faaf4d118f7def51c61529332392967c6d3246302e19247",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-v3-atomic-create-core.ts",
+      "sha256": "e38bff21f19639cd31a26e0c0ac234e03a0f255c5d2683df30dc045044915faa",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-v3-crypto.test.ts",
+      "sha256": "7404c4af7540bd3c29c6417dc95d0badf563f7b60938a202d08046da96d9ed29",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-v3-crypto.ts",
+      "sha256": "c756696b8474dcbeca4f8b5e952ce4ec317b3497f77a0a05871ac7aa2731fcff",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-v3-migration-core.test.ts",
+      "sha256": "ba0eaf8dd0b0af782e046425c084384abc3c8de7082b5bf6605331d6cbf260b0",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-v3-migration-core.ts",
+      "sha256": "ecc7027e541491c8cfb2b4a5473b857b649b780aebe16c2a66b7576fa5e5c6e2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-v3-workflow.ts",
+      "sha256": "1bad235e6c0243f1278a7a7f7d03a00b1998a6898a49488344da7337a0b0fd2b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-workflow-core.test.ts",
+      "sha256": "136beed613d5d1a6e34533e05fefdab71e32abc658aa4f7a5697f4dd2b4c2754",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-workflow-core.ts",
+      "sha256": "24eef5d6a820f80b48b1b2e57c4f1058009d03fa1163e54995c3441ea271b54c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/vault-workflow.ts",
+      "sha256": "f5f556ac89e5c8166dbee64051bd21c1c8dfe3e72dc2247dcfb66205df9c4ae7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-record-core.test.ts",
+      "sha256": "b222f18d460c09054222c0355c3fc08f49359d8a2f090c3135f86cbe924aeeb8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-record-core.ts",
+      "sha256": "e6e21f78195a6ddf53266fd9de4e3fb3e5cf588aaeb988aed0823c5c27a35b68",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-record-store.test.ts",
+      "sha256": "755c87330f969ae2d77b4f66a6d8c5c8592b6d189699e7ed63f8f2c079723ed7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-record-store.ts",
+      "sha256": "e77d61a8f53135f2a00ccf846fbb169bdcccb07205c2e66a26010309edf7d999",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-authorization.ts",
+      "sha256": "a5f34ebd3b7f54189668c9209aefa2c81d5b03c196d33f4c70e0a34ebee6e737",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-controller-core.test.ts",
+      "sha256": "e74fc274e3cc2f8bb5c4f8406e02b52c6500df5fe83657f632374851ecf4bbc7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-controller-core.ts",
+      "sha256": "df48a3c135750549b7f15136740e835529686e40393a9cdf692a27ce16186af7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-controller.ts",
+      "sha256": "5aa628deaa8c56e5468601bb62007482544e8eccd7bdbd3c1999ae29cd741eb4",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-executor-core.test.ts",
+      "sha256": "d0c0f316356667a6a64176637caccec91de3ead76a5ff6eafb65729165aadcfd",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-executor-core.ts",
+      "sha256": "cae8bec8f7a3ff5c8fb05c8d35702f0994369d02b3b4991d53d06fdd445cab8b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-executor.ts",
+      "sha256": "3e899d4cb27f4ea770ac42b8df25c4ce614c9dbaf4ee7d0c951f6c75b403ac41",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-foundation.test.ts",
+      "sha256": "e6655637800f32a6d3784823d43d3303e31ddece1b740897325d0ab87641c865",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-journal-core.ts",
+      "sha256": "11398da46d1bb63e4dbbe0a2355d9f619a1d3d6a133c13bac2ea00e8781dc7a6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-journal-store.test.ts",
+      "sha256": "719241c01b392135d850d9b26e8b3a83db70eddf76a241dadbf42b8a2cfa2b3a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-journal-store.ts",
+      "sha256": "3ca426ef606ecb8f32bbfe4cc8e40b904e0219ca28531f256b175427f653610a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-policy.ts",
+      "sha256": "11be6c3844521f5d019185378db272810d357b81664156fe7d15d27bcb955b29",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-recovery-core.test.ts",
+      "sha256": "a58612cbcd130b3d538383e48444150157558195582c6215fa414c4ec3db49da",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-recovery-core.ts",
+      "sha256": "8437342253da4146e856f92a204a46ca03daf9b0a9209af17ed74f771ae232fb",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-recovery.ts",
+      "sha256": "887c90b222c06318f3fb852888fa1b04125e60ac92b1aeb6b17fd7e33f4f4279",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-snapshot.ts",
+      "sha256": "cf3ce385bde192b687eb4417241a63bef67f9fbc4d114af96b70dcbfe6967670",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-startup-lifecycle-core.test.ts",
+      "sha256": "263222c8785e98524fd265b96bfcfec60f5a89b4c58ef4d16ede2c6a3f05543c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-startup-lifecycle-core.ts",
+      "sha256": "a88bebbde543d13e937ac439e87c276c671c4a14faf81b7da651fe0c9d68c408",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-startup-lifecycle.test.ts",
+      "sha256": "8945aa5d0715a8d638ef1e34a9a976aada05f15d62a039457d8f38eeef9d8f38",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-identity-transition-startup-lifecycle.ts",
+      "sha256": "19aa1e56956a52682cacd47242368045a2694d10b614755a7662ed37a68c72f5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-key-policy.test.ts",
+      "sha256": "fb58618481953967c6c7d822c55bf4309eb3aa478d3db0a1c98d649503530ac5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-key-policy.ts",
+      "sha256": "219534766d08fd9ded5f20d4bcfbf54a665e5a0bc3215cfd4a9aafdfc8d88b8b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-key-vectors.test.ts",
+      "sha256": "4c7edf3e84009cad2aa0aaa78af6c2749bcbff12e5609b28b733c0cc054e5956",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-onboarding-machine.test.ts",
+      "sha256": "bf5a302375039d7290c93fb629e38ce190497978ba6654495c585f6080e6b474",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-onboarding-machine.ts",
+      "sha256": "4fb72c525e4dd5339e3be527504165e881b8730f8678ce246ba796c8d8804fa2",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-onboarding-provider.tsx",
+      "sha256": "4dea21ecfdb33b76b93c034992d87388a96b39eabc7dc9cd90acb8a7d483902a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-secret-feature-gate.test.ts",
+      "sha256": "add593b288af1f96386115d1aff80c87a971c3fa1054c68abb2dbb4d1fa3d673",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/security/wallet-secret-feature-gate.ts",
+      "sha256": "a09245c329bed19527340e9aa4dce75e6531e333b6d0dfd221aba203d858f773",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/activity.test.ts",
+      "sha256": "47fb26f86c44fceffaf176aee744a17119ce2943356eac9b09b27736e1196594",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/activity.ts",
+      "sha256": "39b1b16fbeddbd5810a5f841f74d65da2e204d28799e910268a637824cb3a10e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/firebase-app-check.test.ts",
+      "sha256": "4242376ceefa83ceaba061bd8190e23b89b36323916573ecc33eb26da1c32c31",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/firebase-app-check.ts",
+      "sha256": "89a1ff582632fd4f46c42282d944d8c5aceb0e67d8928dab7c58297fd514bd1c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-activity.test.ts",
+      "sha256": "349388937ce90b137dd13b208c4dbb6b8f39f6bfa1691d2b46c656124a1984c9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-activity.ts",
+      "sha256": "ffd6730613c1b84d402a9e53efe05dcefb6809001240a0a1be165da84af19222",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-firebase-broadcaster.test.ts",
+      "sha256": "ad54d1b4a592b10c08b52f7c0ba1c907b0b798f5f4228ab704e22f5bca6843ac",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-firebase-broadcaster.ts",
+      "sha256": "9419c0533e554d87cf3ac89c24dd4c534e63c000776ea52e7736bf0dbd7e46c6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-portfolio.test.ts",
+      "sha256": "6d0bb7582ec8d8d65c52e63fdb31e6ba924c997e01e2dcef678527050ef6150c",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-portfolio.ts",
+      "sha256": "7c97e02f21e90a7ab0157f160573574cf5d445fd59b3d2e0fdb2908c374cb154",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-public-activity.test.ts",
+      "sha256": "bb926de7713fc588627296e7830e84e9fae46f9f37ac0c49f72d9d5a95f058ba",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-public-activity.ts",
+      "sha256": "978e4b2ba2fb7c90b7b622bc910c51e1414cd08f02326d3a476224aa88e3c7b8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-readonly-boundary.test.ts",
+      "sha256": "fbbeb3be7a4207dc35dd7caeb997e65f82410bcadf401b5444a7036bdf1a4bf8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-readonly-boundary.ts",
+      "sha256": "c48d142fbb04715c5cb2d5704d7054dcae4f6ee26b14fa52d852286425a646c7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-receipt-recovery-source-guard.test.ts",
+      "sha256": "a166fb234044de3ded2bc5c24ea56cef2c9dd0a22f76a264417baba891f2b2a7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-receipt-recovery.test.ts",
+      "sha256": "b89098192afcd01539c09596054607443293ab6ad4fd6faee0536071f2622e5b",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/mainnet-receipt-recovery.ts",
+      "sha256": "0ffa6caef6502d5013444451af1a4d7e525cb1b09a95b5494405630d29b2d7e1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/portfolio.test.ts",
+      "sha256": "eaae321bc1fa0dcc5631cba609239af4fd056c7125fffbe26cbb8bfd9f9d1698",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/portfolio.ts",
+      "sha256": "41b77fd58d66524559db46750e35b4308344f54a7cbca141b5ed4ff35423fac1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-firebase-broadcaster.test.ts",
+      "sha256": "4c3e620e2e9d266ac860a3ece6dd37387dde2d0e94681a42c4dd9fa4b741c609",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-firebase-broadcaster.ts",
+      "sha256": "59d708f9b202a7a370aa4781a7f18ad171b11b412e3194793b701c4bdb4d47e7",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-receipt-poller-source-guard.test.ts",
+      "sha256": "536729489d6db09ff75241babe2ee7302ef4f3684f7fecd0dab032f594f7a68f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-receipt-poller.test.ts",
+      "sha256": "4ea8acb497f2f82530ed02e5225f071908d26735217d2a6106c5775868598046",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-receipt-poller.ts",
+      "sha256": "d0be31a4320f60d59a188fc470172e550bafa8aa83aa97f0d34622060740cbd9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-rpc-broadcaster-source-guard.test.ts",
+      "sha256": "5a759e3218560e01b384898d00b3f78605849cda6fc451edbbe78241fb897b15",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-rpc-broadcaster.test.ts",
+      "sha256": "9f200fc271b1a63b085ab57c2132a800958b7b4783c9adf80fd76f582f0eeda5",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-rpc-broadcaster.ts",
+      "sha256": "314bd70a7652559b4ad9813428fd72d0e1ec1bffd8583345ad36d9f0da94257f",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-transaction-snapshot-source-guard.test.ts",
+      "sha256": "876da7431466ae0fe0ac2bf76e84c6f1f9dfdfd8951e2753a921d45ea6e3ddff",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-transaction-snapshot.test.ts",
+      "sha256": "2f03f9243a7e9b552290eade4656eb2421fd94554a2cd7120ba530f2bcfe90ea",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/testnet-transaction-snapshot.ts",
+      "sha256": "109807a99dcf1e56e09f1cee952f0ea5fd2c80caee3469bee0d2b1e290aa7f2a",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/services/wallet-address-registry.ts",
+      "sha256": "b930d2c11e10e5ded578466a216dbf0d33856c17ee5f017faae85a9193558a51",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/storage/mainnet-public-activity-cache.ts",
+      "sha256": "d0f87588ae0d5b54158555bc0f1f35ea01630766af495e9050367bd534819418",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/storage/mainnet-submission-journal.test.ts",
+      "sha256": "107c007f118d423c4e5373fbafdfa4400325bc8bd2b90d7ec99868587180bcd1",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/storage/mainnet-submission-journal.ts",
+      "sha256": "94382745946db7c760a65b1b47f120f6fb4bd5de91df150ce7902eca9638985e",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/storage/public-activity-cache.ts",
+      "sha256": "38246f7f083a08c232457be761a81c358f0c0a9ef79133f8f67a6f6ac08830c9",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/storage/public-native-activity-journal.ts",
+      "sha256": "00f60d4b820304c665b3a2580fbbc9e70ccbd45964a88ee9b05fb85e639168b6",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/storage/wallet-address-registry-consent.ts",
+      "sha256": "2366725327e77ef73371df014540c70feb72355a1b97819f3ceb07320984ea11",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/storage/watched-address.ts",
+      "sha256": "944e4efd340b353c7b1e9917601ef3d6ff258afd62e361ebed6334ef54150504",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/utils/address.test.ts",
+      "sha256": "548ac841969146a49641bc930d14eea17d87c80f0a8ddcbcaf0b277718e77f19",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/utils/address.ts",
+      "sha256": "5d7ceda5f30a59f70edf0c41c4ef8b0cd587ddb4a9b501089231597ffe34c4c8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/utils/amount.test.ts",
+      "sha256": "7f656e1e2c40a69cbbe812de5abd7df962193e092df0443ab34aa08eb5483980",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/utils/amount.ts",
+      "sha256": "3772b94e268f42502d3d2511991e9ee0fa2d19331cf7a646f0e05748a6794cba",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/utils/freshness.test.ts",
+      "sha256": "a221642bb59f3788bb05d7748fe7095c78d3b105a3a165db435604ec2d72bb71",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/utils/freshness.ts",
+      "sha256": "67c839147ee0441b27251e0bb72269f57beb43225bab473c9a4b4d2ebb85d5d8",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/utils/portfolio-error.test.ts",
+      "sha256": "216d9a4dd17de3833a8d69f5f036da01384b991403d5d95a02877033a5628227",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/src/utils/portfolio-error.ts",
+      "sha256": "dcdcde46198fcb9761fe1da597edb18fa4164e6c3fb63eea95eac50134718a62",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/tests/wallet/testnet-send-entry-source-guard.test.ts",
+      "sha256": "d2623e169cd1a0a53839ae5c24e9f1180da26493f2e97c7794b39f39683ee605",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/tsconfig.json",
+      "sha256": "2c427a7bc50569dc5167d39425793d8bba22eeffcb213fff05f6274980784508",
+      "status": "unchanged-copy"
+    },
+    {
+      "path": "mobile/vitest.config.ts",
+      "sha256": "e9d85e28beab2275c2d8ca6fc43efeffaa08ca0c005bad3ed36598811e7e0edc",
+      "status": "unchanged-copy"
+    }
+  ]
+}

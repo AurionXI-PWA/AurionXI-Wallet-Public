@@ -1,0 +1,437 @@
+apply plugin: "com.android.application"
+apply plugin: "org.jetbrains.kotlin.android"
+apply plugin: "com.facebook.react"
+apply plugin: "com.google.gms.google-services"
+
+def projectRoot = rootDir.getAbsoluteFile().getParentFile().getAbsolutePath()
+
+/**
+ * This is the configuration block to customize your React Native Android app.
+ * By default you don't need to apply any configuration, just uncomment the lines you need.
+ */
+react {
+    entryFile = file(["node", "-e", "require('expo/scripts/resolveAppEntry')", projectRoot, "android", "absolute"].execute(null, rootDir).text.trim())
+    reactNativeDir = new File(["node", "--print", "require.resolve('react-native/package.json')"].execute(null, rootDir).text.trim()).getParentFile().getAbsoluteFile()
+    hermesCommand = new File(["node", "--print", "require.resolve('hermes-compiler/package.json', { paths: [require.resolve('react-native/package.json')] })"].execute(null, rootDir).text.trim()).getParentFile().getAbsolutePath() + "/hermesc/%OS-BIN%/hermesc"
+    codegenDir = new File(["node", "--print", "require.resolve('@react-native/codegen/package.json', { paths: [require.resolve('react-native/package.json')] })"].execute(null, rootDir).text.trim()).getParentFile().getAbsoluteFile()
+
+    enableBundleCompression = (findProperty('android.enableBundleCompression') ?: false).toBoolean()
+    // Use Expo CLI to bundle the app, this ensures the Metro config
+    // works correctly with Expo projects.
+    cliFile = new File(["node", "--print", "require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })"].execute(null, rootDir).text.trim())
+    bundleCommand = "export:embed"
+
+    /* Folders */
+     //   The root of your project, i.e. where "package.json" lives. Default is '../..'
+    // root = file("../../")
+    //   The folder where the react-native NPM package is. Default is ../../node_modules/react-native
+    // reactNativeDir = file("../../node_modules/react-native")
+    //   The folder where the react-native Codegen package is. Default is ../../node_modules/@react-native/codegen
+    // codegenDir = file("../../node_modules/@react-native/codegen")
+
+    /* Variants */
+    //   The list of variants to that are debuggable. For those we're going to
+    //   skip the bundling of the JS bundle and the assets. By default is just 'debug'.
+    //   If you add flavors like lite, prod, etc. you'll have to list your debuggableVariants.
+    // debuggableVariants = ["liteDebug", "prodDebug"]
+
+    /* Bundling */
+    //   A list containing the node command and its flags. Default is just 'node'.
+    // nodeExecutableAndArgs = ["node"]
+
+    //
+    //   The path to the CLI configuration file. Default is empty.
+    // bundleConfig = file(../rn-cli.config.js)
+    //
+    //   The name of the generated asset file containing your JS bundle
+    // bundleAssetName = "MyApplication.android.bundle"
+    //
+    //   The entry file for bundle generation. Default is 'index.android.js' or 'index.js'
+    // entryFile = file("../js/MyApplication.android.js")
+    //
+    //   A list of extra flags to pass to the 'bundle' commands.
+    //   See https://github.com/react-native-community/cli/blob/main/docs/commands.md#bundle
+    // extraPackagerArgs = []
+
+    /* Hermes Commands */
+    //   The hermes compiler command to run. By default it is 'hermesc'
+    // hermesCommand = "$rootDir/my-custom-hermesc/bin/hermesc"
+    //
+    //   The list of flags to pass to the Hermes compiler. By default is "-O", "-output-source-map"
+    // hermesFlags = ["-O", "-output-source-map"]
+
+    /* Autolinking */
+    autolinkLibrariesWithApp()
+}
+
+/**
+ * Set this to true in release builds to optimize the app using [R8](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization).
+ */
+// Release artifacts must be hardened unless an audited build process explicitly
+// opts out for a documented compatibility investigation.
+def enableMinifyInReleaseBuilds = (findProperty('android.enableMinifyInReleaseBuilds') ?: 'true').toBoolean()
+
+def releaseKeystorePropertiesFile = rootProject.file('keystore.properties')
+def releaseKeystoreProperties = new Properties()
+if (releaseKeystorePropertiesFile.exists()) {
+    releaseKeystorePropertiesFile.withInputStream { releaseKeystoreProperties.load(it) }
+    def requiredReleaseKeystoreProperties = ['storeFile', 'storePassword', 'keyAlias', 'keyPassword']
+    def missingReleaseKeystoreProperties = requiredReleaseKeystoreProperties.findAll {
+        !releaseKeystoreProperties.getProperty(it)?.trim()
+    }
+    if (!missingReleaseKeystoreProperties.isEmpty()) {
+        throw new GradleException("keystore.properties is missing: ${missingReleaseKeystoreProperties.join(', ')}")
+    }
+}
+
+// The website-distributed wallet is deliberately a distinct Android app. Its
+// signing material must never be reused for the Play Store app.
+def directReleaseKeystorePropertiesFile = rootProject.file('direct-keystore.properties')
+def directReleaseKeystoreProperties = new Properties()
+if (directReleaseKeystorePropertiesFile.exists()) {
+    directReleaseKeystorePropertiesFile.withInputStream { directReleaseKeystoreProperties.load(it) }
+    def requiredDirectKeystoreProperties = ['storeFile', 'storePassword', 'keyAlias', 'keyPassword']
+    def missingDirectKeystoreProperties = requiredDirectKeystoreProperties.findAll {
+        !directReleaseKeystoreProperties.getProperty(it)?.trim()
+    }
+    if (!missingDirectKeystoreProperties.isEmpty()) {
+        throw new GradleException("direct-keystore.properties is missing: ${missingDirectKeystoreProperties.join(', ')}")
+    }
+}
+
+// The Android reCAPTCHA Enterprise site key is package-restricted and public
+// by design, but keep the Direct distribution configuration local so it does
+// not get copied into the Play Store flavor or source history.
+def directAppCheckPropertiesFile = rootProject.file('direct-app-check.properties')
+def directAppCheckProperties = new Properties()
+if (directAppCheckPropertiesFile.exists()) {
+    directAppCheckPropertiesFile.withInputStream { directAppCheckProperties.load(it) }
+}
+def directRecaptchaEnterpriseSiteKey = directAppCheckProperties
+    .getProperty('recaptchaEnterpriseSiteKey', '')
+    .trim()
+
+def controlledProofPropertiesFile = rootProject.file('controlled-proof.properties')
+def controlledProofProperties = new Properties()
+if (controlledProofPropertiesFile.exists()) {
+    controlledProofPropertiesFile.withInputStream { controlledProofProperties.load(it) }
+}
+def controlledProofEnabled = controlledProofProperties.getProperty('enabled', 'false').trim() == 'true'
+def controlledProofSender = controlledProofProperties.getProperty('senderAddress', '').trim().toLowerCase()
+def controlledProofRecipient = controlledProofProperties.getProperty('recipientAddress', '').trim().toLowerCase()
+def controlledProofAsset = controlledProofProperties.getProperty('asset', '').trim().toLowerCase()
+def controlledProofAmountWei = controlledProofProperties.getProperty('amountWei', '0').trim()
+def controlledProofMaxFeeWei = controlledProofProperties.getProperty('maxFeeWei', '0').trim()
+def controlledProofExpiresAt = controlledProofProperties.getProperty('expiresAtEpochMs', '0').trim()
+def controlledProofString = { value -> "\"${value.replace('\\', '\\\\').replace('\"', '\\\"')}\"" }
+
+/**
+ * The preferred build flavor of JavaScriptCore (JSC)
+ *
+ * For example, to use the international variant, you can use:
+ * `def jscFlavor = 'org.webkit:android-jsc-intl:+'`
+ *
+ * The international variant includes ICU i18n library and necessary data
+ * allowing to use e.g. `Date.toLocaleString` and `String.localeCompare` that
+ * give correct results when using with locales other than en-US. Note that
+ * this variant is about 6MiB larger per architecture than default.
+ */
+def jscFlavor = 'io.github.react-native-community:jsc-android:2026004.+'
+
+// Public build identity includes source contents, never local credential/configuration values.
+def supportSourceDigest = java.security.MessageDigest.getInstance('SHA-256')
+def supportSourceFiles = (fileTree('src/main/java').matching { include '**/*.kt', '**/*.java' }.files +
+    fileTree('../../src').matching { include '**/*.ts', '**/*.tsx' }.files + [file('build.gradle')]).sort { a, b -> a.path <=> b.path }
+supportSourceFiles.each { sourceFile ->
+    supportSourceDigest.update(project.relativePath(sourceFile).getBytes('UTF-8'))
+    supportSourceDigest.update(sourceFile.getText('UTF-8').replace('\r\n', '\n').getBytes('UTF-8'))
+}
+def supportBuildFingerprint = supportSourceDigest.digest().encodeHex().toString()
+
+android {
+    ndkVersion rootProject.ext.ndkVersion
+
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdk rootProject.ext.compileSdkVersion
+
+    namespace 'com.aurionxi.wallet'
+    defaultConfig {
+        applicationId 'com.aurionxi.wallet'
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+        buildConfigField "String", "MAINNET_SUPPORT_BUILD_FINGERPRINT", "\"${supportBuildFingerprint}\""
+        manifestPlaceholders = [walletDeepLinkScheme: 'aurionxi-wallet']
+
+        buildConfigField "String", "REACT_NATIVE_RELEASE_LEVEL", "\"${findProperty('reactNativeReleaseLevel') ?: 'stable'}\""
+        buildConfigField "boolean", "CONTROLLED_PROOF_ENABLED", "false"
+        buildConfigField "String", "CONTROLLED_PROOF_SENDER", '""'
+        buildConfigField "String", "CONTROLLED_PROOF_RECIPIENT", '""'
+        buildConfigField "String", "CONTROLLED_PROOF_ASSET", '""'
+        buildConfigField "String", "CONTROLLED_PROOF_AMOUNT_WEI", '"0"'
+        buildConfigField "String", "CONTROLLED_PROOF_MAX_FEE_WEI", '"0"'
+        buildConfigField "String", "CONTROLLED_PROOF_EXPIRES_AT_EPOCH_MS", '"0"'
+        // Controlled production activation approved after Point 12J audit closure;
+        // native caps remain mandatory for every ordinary Direct signature.
+        buildConfigField "boolean", "DIRECT_MAINNET_PRODUCTION_ENABLED", "true"
+        // Swap activation follows the separately requested acceptance step.
+        buildConfigField "boolean", "DIRECT_MAINNET_SWAP_ENABLED", "false"
+        buildConfigField "String", "DIRECT_MAINNET_MAX_BNB_AMOUNT_WEI", '"100000000000000000"'
+        buildConfigField "String", "DIRECT_MAINNET_MAX_ARXI_AMOUNT_WEI", '"5000000000000000000000"'
+        buildConfigField "String", "DIRECT_MAINNET_MAX_USDT_AMOUNT_WEI", '"100000000000000000000"'
+        buildConfigField "String", "DIRECT_MAINNET_MAX_FEE_WEI", '"100000000000000"'
+    }
+    flavorDimensions += 'walletMode'
+    productFlavors {
+        production {
+            dimension 'walletMode'
+        }
+        // Official website APK. This is a separately installable Android app,
+        // not a sideloaded copy of the Play Store package.
+        officialDirect {
+            dimension 'walletMode'
+            // Step 6: six-route fork acceptance completed; retain independent native caps.
+            buildConfigField "boolean", "DIRECT_MAINNET_SWAP_ENABLED", "true"
+            applicationIdSuffix '.direct'
+            versionNameSuffix '-direct'
+            manifestPlaceholders = [walletDeepLinkScheme: 'aurionxi-wallet-direct']
+            resValue 'string', 'app_name', 'AurionXI Wallet Direct'
+            resValue 'string', 'aurionxi_recaptcha_enterprise_site_key', directRecaptchaEnterpriseSiteKey
+        }
+        isolatedTestnet {
+            dimension 'walletMode'
+            applicationIdSuffix '.isolatedtestnet'
+            versionNameSuffix '-isolated-testnet'
+            resValue 'string', 'app_name', 'AurionXI Wallet Testnet'
+        }
+        privatePreview {
+            dimension 'walletMode'
+            applicationIdSuffix '.preview'
+            versionCode 28
+            versionName '1.0.27-private-preview'
+            resValue 'string', 'app_name', 'AurionXI Wallet'
+        }
+        recoveryFixture {
+            dimension 'walletMode'
+            applicationIdSuffix '.recoveryfixture'
+            versionNameSuffix '-recovery-fixture'
+            resValue 'string', 'app_name', 'AurionXI Wallet Recovery Fixture'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+        if (releaseKeystorePropertiesFile.exists()) {
+            release {
+                storeFile file(releaseKeystoreProperties.getProperty('storeFile'))
+                storePassword releaseKeystoreProperties.getProperty('storePassword')
+                keyAlias releaseKeystoreProperties.getProperty('keyAlias')
+                keyPassword releaseKeystoreProperties.getProperty('keyPassword')
+            }
+        }
+        if (directReleaseKeystorePropertiesFile.exists()) {
+            directRelease {
+                storeFile file(directReleaseKeystoreProperties.getProperty('storeFile'))
+                storePassword directReleaseKeystoreProperties.getProperty('storePassword')
+                keyAlias directReleaseKeystoreProperties.getProperty('keyAlias')
+                keyPassword directReleaseKeystoreProperties.getProperty('keyPassword')
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            // Release artifacts must never silently use the Android debug certificate.
+            if (releaseKeystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+            def enableShrinkResources = findProperty('android.enableShrinkResourcesInReleaseBuilds') ?: 'true'
+            shrinkResources enableShrinkResources.toBoolean()
+            minifyEnabled enableMinifyInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            def enablePngCrunchInRelease = findProperty('android.enablePngCrunchInReleaseBuilds') ?: 'true'
+            crunchPngs enablePngCrunchInRelease.toBoolean()
+        }
+        controlledProof {
+            initWith release
+            matchingFallbacks = ['release']
+            versionNameSuffix '-controlled-proof'
+            // Audit remediation: proof artifacts are a separate non-production
+            // identity and certificate, never an alternate Direct release APK.
+            applicationIdSuffix '.controlledproof'
+            signingConfig signingConfigs.debug
+            buildConfigField "boolean", "CONTROLLED_PROOF_ENABLED", controlledProofEnabled.toString()
+            buildConfigField "String", "CONTROLLED_PROOF_SENDER", controlledProofString(controlledProofSender)
+            buildConfigField "String", "CONTROLLED_PROOF_RECIPIENT", controlledProofString(controlledProofRecipient)
+            buildConfigField "String", "CONTROLLED_PROOF_ASSET", controlledProofString(controlledProofAsset)
+            buildConfigField "String", "CONTROLLED_PROOF_AMOUNT_WEI", controlledProofString(controlledProofAmountWei)
+            buildConfigField "String", "CONTROLLED_PROOF_MAX_FEE_WEI", controlledProofString(controlledProofMaxFeeWei)
+            buildConfigField "String", "CONTROLLED_PROOF_EXPIRES_AT_EPOCH_MS", controlledProofString(controlledProofExpiresAt)
+        }
+    }
+    variantFilter { variant ->
+        if (variant.buildType.name == 'controlledProof' && !variant.flavors*.name.contains('officialDirect')) {
+            setIgnore(true)
+        }
+    }
+    if (directReleaseKeystorePropertiesFile.exists()) {
+        productFlavors.officialDirect.signingConfig signingConfigs.directRelease
+    }
+    packagingOptions {
+        resources {
+            // Tuweni ships this identical informational file in two transitive
+            // libraries. It is not executable code; retaining either copy has
+            // no runtime effect, but Android packaging requires one entry.
+            excludes += ['META-INF/DISCLAIMER']
+        }
+        jniLibs {
+            def enableLegacyPackaging = findProperty('expo.useLegacyPackaging') ?: 'false'
+            useLegacyPackaging enableLegacyPackaging.toBoolean()
+        }
+    }
+    androidResources {
+        ignoreAssetsPattern '!.svn:!.git:!.ds_store:!*.scc:!CVS:!thumbs.db:!picasa.ini:!*~'
+    }
+}
+
+// Keep debug signing limited to debug variants. Every release task, including
+// privatePreviewRelease, fails before execution without complete local release credentials.
+tasks.configureEach { task ->
+    def lowerTaskName = task.name.toLowerCase()
+    // Native clean tasks include the variant's "release" suffix but neither
+    // package nor sign an artifact, so credentials are irrelevant to them.
+    def producesReleaseArtifact = lowerTaskName.contains('release') && !lowerTaskName.contains('clean')
+    if (lowerTaskName.contains('officialdirect') && producesReleaseArtifact) {
+        task.doFirst {
+            if (!directReleaseKeystorePropertiesFile.exists()) {
+                throw new GradleException('Official Direct release builds require ignored local direct-keystore.properties; Play Store signing must not be reused.')
+            }
+        }
+    } else if (producesReleaseArtifact) {
+        task.doFirst {
+            if (!releaseKeystorePropertiesFile.exists()) {
+                throw new GradleException('Release builds require ignored local keystore.properties; debug signing is not permitted.')
+            }
+        }
+    }
+}
+
+// Policy validation is a mandatory dependency of every output-producing
+// controlled-proof variant task. Gradle resolves abbreviated selectors and
+// aggregate tasks before executing dependencies, so neither can bypass this
+// check. Ordinary Direct release support tasks do not depend on it.
+def enforceOfficialDirectControlledProofPolicy = {
+    def addressPattern = ~/^0x[0-9a-f]{40}$/
+    def decimalPattern = ~/^(0|[1-9][0-9]*)$/
+    if (!controlledProofPropertiesFile.exists() || !controlledProofEnabled
+        || !(controlledProofSender ==~ addressPattern) || !(controlledProofRecipient ==~ addressPattern)
+        || controlledProofSender == controlledProofRecipient || controlledProofAsset != 'arxi'
+        || !(controlledProofAmountWei ==~ decimalPattern) || controlledProofAmountWei == '0'
+        || !(controlledProofMaxFeeWei ==~ decimalPattern) || controlledProofMaxFeeWei == '0'
+        || !(controlledProofExpiresAt ==~ decimalPattern) || controlledProofExpiresAt == '0'
+        || (controlledProofExpiresAt ==~ decimalPattern && new BigInteger(controlledProofExpiresAt) <= BigInteger.valueOf(System.currentTimeMillis()))) {
+        throw new GradleException('Controlled proof builds require a complete, enabled, exact ARXI policy in ignored controlled-proof.properties.')
+    }
+}
+
+def validateOfficialDirectControlledProofPolicy = tasks.register('validateOfficialDirectControlledProofPolicy') {
+    group = 'verification'
+    description = 'Validates the exact expiring policy for every controlled-proof artifact.'
+    doLast {
+        enforceOfficialDirectControlledProofPolicy()
+    }
+}
+
+tasks.configureEach { task ->
+    def controlledProofArtifactTask = task.name ==~ /(?i)^(assemble|package|bundle|install|sign|publish|finalize).*OfficialDirectControlledProof.*/
+    if (controlledProofArtifactTask) {
+        // This check executes inside the selected task itself. Gradle -x can
+        // exclude the compatibility validator dependency, but cannot exclude
+        // this action while still executing any controlled-proof task.
+        task.doFirst {
+            enforceOfficialDirectControlledProofPolicy()
+        }
+    }
+    if (controlledProofArtifactTask) {
+        task.dependsOn(validateOfficialDirectControlledProofPolicy)
+    }
+}
+
+// Apply static values from `gradle.properties` to the `android.packagingOptions`
+// Accepts values in comma delimited lists, example:
+// android.packagingOptions.pickFirsts=/LICENSE,**/picasa.ini
+["pickFirsts", "excludes", "merges", "doNotStrip"].each { prop ->
+    // Split option: 'foo,bar' -> ['foo', 'bar']
+    def options = (findProperty("android.packagingOptions.$prop") ?: "").split(",");
+    // Trim all elements in place.
+    for (i in 0..<options.size()) options[i] = options[i].trim();
+    // `[] - ""` is essentially `[""].filter(Boolean)` removing all empty strings.
+    options -= ""
+
+    if (options.length > 0) {
+        println "android.packagingOptions.$prop += $options ($options.length)"
+        // Ex: android.packagingOptions.pickFirsts += '**/SCCS/**'
+        options.each {
+            android.packagingOptions[prop] += it
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    // Test-only Kotlin PSI provides syntax-tree enforcement for the native
+    // signer boundary. It is not packaged into any APK.
+    testImplementation 'org.jetbrains.kotlin:kotlin-compiler-embeddable:2.1.20'
+    // The version of react-native is set by the React Native Gradle Plugin
+    implementation("com.facebook.react:react-android")
+    // RNFirebase App Check currently exposes Play Integrity only.  The
+    // Direct flavor's native bridge uses this official Firebase provider.
+    implementation platform('com.google.firebase:firebase-bom:34.18.0')
+    implementation 'com.google.firebase:firebase-appcheck-recaptcha'
+    // Android-specific crypto artifact; no JavaScript signer is introduced.
+    implementation 'org.web3j:core:4.12.3-android'
+    // Keep the Android crypto AAR: the standard crypto artifact brings desktop
+    // Groovy/Tuweni runtime code into the APK. The Android AAR intentionally
+    // relies on the small utils module for Hash, Numeric and Bouncy Castle.
+    implementation 'org.web3j:crypto:4.12.3-android'
+    implementation 'org.web3j:utils:4.12.3'
+    implementation 'org.web3j:rlp:4.12.3'
+    implementation 'com.lambdapioneer.argon2kt:argon2kt:1.6.0'
+    // Native trusted UI for the Mainnet vault migration. The prompt is bound
+    // to the exact Android Keystore cipher that seals the native vault.
+    implementation 'androidx.biometric:biometric:1.1.0'
+    // Process lifecycle distinguishes a real app background from the transient
+    // host pause that Android's own BiometricPrompt may produce.
+    implementation 'androidx.lifecycle:lifecycle-process:2.8.7'
+
+    def isGifEnabled = (findProperty('expo.gif.enabled') ?: "") == "true";
+    def isWebpEnabled = (findProperty('expo.webp.enabled') ?: "") == "true";
+    def isWebpAnimatedEnabled = (findProperty('expo.webp.animated') ?: "") == "true";
+
+    if (isGifEnabled) {
+        // For animated gif support
+        implementation("com.facebook.fresco:animated-gif:${expoLibs.versions.fresco.get()}")
+    }
+
+    if (isWebpEnabled) {
+        // For webp support
+        implementation("com.facebook.fresco:webpsupport:${expoLibs.versions.fresco.get()}")
+        if (isWebpAnimatedEnabled) {
+            // Animated webp support
+            implementation("com.facebook.fresco:animated-webp:${expoLibs.versions.fresco.get()}")
+        }
+    }
+
+    if (hermesEnabled.toBoolean()) {
+        implementation("com.facebook.react:hermes-android")
+    } else {
+        implementation jscFlavor
+    }
+}
